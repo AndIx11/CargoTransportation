@@ -1,0 +1,89 @@
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\bin\Debug\HelpMenu.dll
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\bin\Debug\HelpMenu.pdb
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\HelpMenu.csproj.AssemblyReference.cache
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\AboutPage.g.cs
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\HelpPage.g.cs
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\HelpMenu_MarkupCompile.cache
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\HelpMenu_MarkupCompile.lref
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\AboutPage.baml
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\HelpPage.baml
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\HelpMenu.g.resources
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\HelpMenu.Properties.Resources.resources
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\HelpMenu.csproj.GenerateResource.cache
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\HelpMenu.csproj.CoreCompileInputs.cache
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\HelpMenu.dll
+C:\Users\Kirill\Desktop\Рестораны\HelpMenu\obj\Debug\HelpMenu.pdb
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\bin\Debug\HelpMenu.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\bin\Debug\HelpMenu.pdb
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\HelpMenu.csproj.AssemblyReference.cache
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\AboutPage.g.cs
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\HelpPage.g.cs
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\HelpMenu_MarkupCompile.cache
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\HelpMenu_MarkupCompile.lref
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\AboutPage.baml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\HelpPage.baml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\HelpMenu.g.resources
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\HelpMenu.Properties.Resources.resources
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\HelpMenu.csproj.GenerateResource.cache
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\HelpMenu.csproj.CoreCompileInputs.cache
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\HelpMenu.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\HelpMenu\obj\Debug\HelpMenu.pdb
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\bin\Debug\HelpMenu.dll
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\bin\Debug\HelpMenu.pdb
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\HelpMenu.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\AboutPage.g.cs
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\HelpPage.g.cs
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\HelpMenu_MarkupCompile.cache
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\HelpMenu_MarkupCompile.lref
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\AboutPage.baml
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\HelpPage.baml
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\HelpMenu.g.resources
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\HelpMenu.Properties.Resources.resources
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\HelpMenu.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\HelpMenu.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\HelpMenu.dll
+C:\Users\Asus\Desktop\Библиотека2\HelpMenu\obj\Debug\HelpMenu.pdb
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\bin\Debug\HelpMenu.dll
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\bin\Debug\HelpMenu.pdb
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\HelpMenu.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\AboutPage.g.cs
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\HelpPage.g.cs
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\HelpMenu_MarkupCompile.cache
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\HelpMenu_MarkupCompile.lref
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\AboutPage.baml
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\HelpPage.baml
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\HelpMenu.g.resources
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\HelpMenu.Properties.Resources.resources
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\HelpMenu.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\HelpMenu.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\HelpMenu.dll
+C:\Users\Asus\Desktop\Библиотека\HelpMenu\obj\Debug\HelpMenu.pdb
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\bin\Debug\HelpMenu.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\bin\Debug\HelpMenu.pdb
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\obj\Debug\AboutPage.g.cs
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\obj\Debug\HelpPage.g.cs
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\obj\Debug\HelpMenu_MarkupCompile.cache
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\obj\Debug\HelpMenu_MarkupCompile.lref
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\obj\Debug\AboutPage.baml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\obj\Debug\HelpPage.baml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\obj\Debug\HelpMenu.g.resources
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\obj\Debug\HelpMenu.Properties.Resources.resources
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\obj\Debug\HelpMenu.csproj.GenerateResource.cache
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\obj\Debug\HelpMenu.csproj.CoreCompileInputs.cache
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\obj\Debug\HelpMenu.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\HelpMenu\obj\Debug\HelpMenu.pdb
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\bin\Debug\HelpMenu.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\bin\Debug\HelpMenu.pdb
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\HelpMenu.csproj.AssemblyReference.cache
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\AboutPage.g.cs
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\HelpPage.g.cs
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\HelpMenu_MarkupCompile.cache
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\HelpMenu_MarkupCompile.lref
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\AboutPage.baml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\HelpPage.baml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\HelpMenu.g.resources
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\HelpMenu.Properties.Resources.resources
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\HelpMenu.csproj.GenerateResource.cache
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\HelpMenu.csproj.CoreCompileInputs.cache
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\HelpMenu.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\HelpMenu\obj\Debug\HelpMenu.pdb

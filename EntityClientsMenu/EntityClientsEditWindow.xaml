@@ -1,0 +1,29 @@
+﻿<Window x:Class="EntityClientsMenu.EntityClientsEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntityClientsMenu"
+        mc:Ignorable="d"
+        Title="{Binding Tittle}" 
+	    Visibility="{Binding WindowVisibility, Mode=TwoWay}" Height="299" Width="343">
+
+    <Grid>
+        <Label Content="Название" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,22,0,0" RenderTransformOrigin="0.559,-0.314"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="23" Margin="137,23,0,0" Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="ФИО руководителя" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="23" Margin="137,51,0,0" Text="{Binding CEOName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Button VerticalAlignment="Top" Height="37" Margin="30,219,30,0" Content="Запись" Command="{Binding ButtonCommand}"/>
+        <Label Content="ИНН" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,78,0,0"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="24" Margin="137,79,0,0" Text="{Binding INN, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="Юридический адрес" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,139,0,0"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="23" Margin="137,140,0,0" Text="{Binding LegalAddress, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="Банк клиента" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,166,0,0"/>
+        <ComboBox HorizontalAlignment="Left" Margin="137,168,0,0" VerticalAlignment="Top" Width="188" 
+				  ItemsSource="{Binding Banks}" SelectedItem="{Binding SelectedBank}" DisplayMemberPath="BankName"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="24" Margin="137,108,0,0" Text="{Binding Phone, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,107,0,0"/>
+    </Grid>
+
+</Window>

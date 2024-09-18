@@ -1,0 +1,513 @@
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\ModelViewSystem.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\ModelViewSystem.pdb
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\DatabaseManagers.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Buffers.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Collections.Immutable.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Memory.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Castle.Core.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\DatabaseManagers.pdb
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\DatabaseManagers.dll.config
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.DotNet.PlatformAbstractions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyModel.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Buffers.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Collections.Immutable.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Memory.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\bin\Debug\Castle.Core.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.AssemblyReference.cache
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CoreCompileInputs.cache
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CopyComplete
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\obj\Debug\ModelViewSystem.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека2\ModelViewSystem\obj\Debug\ModelViewSystem.pdb
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\ModelViewSystem.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\ModelViewSystem.pdb
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\DatabaseManagers.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Buffers.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Memory.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Castle.Core.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\DatabaseManagers.pdb
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\DatabaseManagers.dll.config
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.DotNet.PlatformAbstractions.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyModel.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Buffers.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Memory.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\bin\Debug\Castle.Core.xml
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CopyComplete
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\obj\Debug\ModelViewSystem.dll
+C:\Users\Asus\Desktop\Библиотека2\ModelViewSystem\obj\Debug\ModelViewSystem.pdb
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\ModelViewSystem.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\ModelViewSystem.pdb
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\DatabaseManagers.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Buffers.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Memory.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Castle.Core.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\DatabaseManagers.pdb
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\DatabaseManagers.dll.config
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.DotNet.PlatformAbstractions.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyModel.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Buffers.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Memory.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\bin\Debug\Castle.Core.xml
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CopyComplete
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.dll
+C:\Users\Asus\Desktop\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.pdb
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\ModelViewSystem.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\ModelViewSystem.pdb
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\DatabaseManagers.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Buffers.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Collections.Immutable.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Memory.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Castle.Core.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\DatabaseManagers.pdb
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\DatabaseManagers.dll.config
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.DotNet.PlatformAbstractions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyModel.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Buffers.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Collections.Immutable.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Memory.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\bin\Debug\Castle.Core.xml
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.AssemblyReference.cache
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CoreCompileInputs.cache
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CopyComplete
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.dll
+C:\Users\User\УЧЕБА\5 семестр\базы данных\курсач\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.pdb
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\ModelViewSystem.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\ModelViewSystem.pdb
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\DatabaseManagers.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Buffers.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Memory.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Castle.Core.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\DatabaseManagers.pdb
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\DatabaseManagers.dll.config
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.DotNet.PlatformAbstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyModel.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Buffers.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Memory.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\bin\Debug\Castle.Core.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.AssemblyReference.cache
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CoreCompileInputs.cache
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CopyComplete
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Библиотека\ModelViewSystem\obj\Debug\ModelViewSystem.pdb
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\ModelViewSystem.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\ModelViewSystem.pdb
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\DatabaseManagers.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\System.Buffers.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Castle.Core.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\DatabaseManagers.pdb
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\DatabaseManagers.dll.config
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.DotNet.PlatformAbstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyModel.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\System.Memory.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\Castle.Core.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.AssemblyReference.cache
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CoreCompileInputs.cache
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CopyComplete
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.pdb
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Референс\Грузоперевозки\ModelViewSystem\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\ModelViewSystem.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\ModelViewSystem.pdb
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\DatabaseManagers.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\System.Buffers.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Castle.Core.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\DatabaseManagers.pdb
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\DatabaseManagers.dll.config
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.DotNet.PlatformAbstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Sqlite.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.DependencyModel.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\System.Memory.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\bin\Debug\Castle.Core.xml
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.AssemblyReference.cache
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CoreCompileInputs.cache
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CopyComplete
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.dll
+C:\Users\Kirill\Desktop\БД_Андрей\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.pdb
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\ModelViewSystem.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\ModelViewSystem.pdb
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\DatabaseManagers.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\System.Buffers.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\Castle.Core.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\DatabaseManagers.pdb
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\DatabaseManagers.dll.config
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\Microsoft.EntityFrameworkCore.Proxies.xml
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\bin\Debug\Castle.Core.xml
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.AssemblyReference.cache
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\obj\Debug\ModelVie.82542A9C.Up2Date
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.dll
+C:\Users\andre\Desktop\Грузоперевозки\ModelViewSystem\obj\Debug\ModelViewSystem.pdb

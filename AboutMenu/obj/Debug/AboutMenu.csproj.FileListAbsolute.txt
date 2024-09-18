@@ -1,0 +1,13 @@
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\bin\Debug\AboutMenu.dll
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\bin\Debug\AboutMenu.pdb
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\obj\Debug\AboutMenu.csproj.AssemblyReference.cache
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\obj\Debug\AboutEditWindow.g.cs
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\obj\Debug\AboutMenu_MarkupCompile.cache
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\obj\Debug\AboutMenu_MarkupCompile.lref
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\obj\Debug\AboutEditWindow.baml
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\obj\Debug\AboutMenu.g.resources
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\obj\Debug\AboutMenu.Properties.Resources.resources
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\obj\Debug\AboutMenu.csproj.GenerateResource.cache
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\obj\Debug\AboutMenu.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\obj\Debug\AboutMenu.dll
+C:\Users\andre\Desktop\Грузоперевозки\AboutMenu\obj\Debug\AboutMenu.pdb

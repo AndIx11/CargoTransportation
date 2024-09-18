@@ -1,0 +1,285 @@
+﻿using DatabaseManagers;
+using ModelViewSystem;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+
+namespace ClientsMenu
+{
+    public class ClientsEditWindowModelView : DataModelEditWindowModelView
+    {
+        private ObservableCollection<ClassificationModel> _classID;
+        private ClassificationModel _selectedClassID;
+
+        private ObservableCollection<CategoryModel> _categories;
+        private ObservableCollection<CategoryModel> _allCategories;
+        private CategoryModel _selectedCategory;
+        private CategoryModel _selectedTableCategory;
+
+        private string _badgeNumber;
+        private string _fullName;
+        private string _birthYear;
+        private string _workExperience;
+
+
+        public ObservableCollection<ClassificationModel> ClassIDList
+        {
+            get { return _classID; }
+            set
+
+            {
+                _classID = value;
+                OnPropertyChanged(nameof(ClassIDList));
+            }
+        }
+        public ClassificationModel SelectedClassID
+        {
+            get { return _selectedClassID; }
+            set
+            {
+                _selectedClassID = value;
+                OnPropertyChanged(nameof(SelectedClassID));
+            }
+        }
+        public ObservableCollection<CategoryModel> AllCategories
+        {
+            get { return _allCategories; }
+            set
+            {
+                _allCategories = value;
+                OnPropertyChanged(nameof(AllCategories));
+            }
+        }
+        public ObservableCollection<CategoryModel> Categories
+        {
+            get { return _categories; }
+            set
+
+            {
+                _categories = value;
+                OnPropertyChanged(nameof(Categories));
+            }
+        }
+        public CategoryModel SelectedCategory
+        {
+            get { return _selectedCategory; }
+            set
+            {
+                _selectedCategory = value;
+                OnPropertyChanged(nameof(SelectedCategory));
+            }
+        }
+        public CategoryModel SelectedTableCategory
+        {
+            get { return _selectedTableCategory; }
+            set
+            {
+                _selectedTableCategory = value;
+                OnPropertyChanged(nameof(SelectedTableCategory));
+            }
+        }
+
+        public string BadgeNumber
+        {
+            get => _badgeNumber;
+            set
+            {
+                if (_badgeNumber != value)
+                {
+                    _badgeNumber = value;
+                    OnPropertyChanged(nameof(BadgeNumber));
+                }
+            }
+        }
+        public string FullName
+        {
+            get => _fullName;
+            set
+            {
+                if (_fullName != value)
+                {
+                    _fullName = value;
+                    OnPropertyChanged(nameof(FullName));
+                }
+            }
+        }
+        public string BirthYear
+        {
+            get => _birthYear;
+            set
+            {
+                if (_birthYear != value)
+                {
+                    _birthYear = value;
+                    OnPropertyChanged(nameof(BirthYear));
+                }
+            }
+        }
+        public string WorkExperience
+        {
+            get => _workExperience;
+            set
+            {
+                if (_workExperience != value)
+                {
+                    _workExperience = value;
+                    OnPropertyChanged(nameof(WorkExperience));
+                }
+            }
+        }
+
+
+        public ClientsEditWindowModelView() : base()
+        {
+            Tittle = "Новая классность";
+        }
+
+        public ClientsEditWindowModelView(ClientModel clientModel) : base(clientModel)
+        {
+            Tittle = "Редактирование классности";
+        }
+
+        protected override void Add(object obj)
+        {
+            try
+            {
+                base.Add(obj);
+
+                if (SelectedClassID == null)
+                    throw new Exception("Класс не выбран");
+
+                if (!int.TryParse(WorkExperience, out int experince))
+                    throw new Exception("Стаж - некорректный формат");
+
+                if(experince < 0)
+                    throw new Exception("Стаж - некорректный формат");
+
+                DriverModel driverModel = new DriverModel()
+                {
+                    ClassID = SelectedClassID.Id,
+                    BadgeNumber = BadgeNumber,
+                    FullName = FullName,
+                    BirthYear = BirthYear,
+                    WorkExperience = experince,
+                };
+                
+
+                Database.Add(driverModel);
+                CategoriesAdding(driverModel);
+                SuccessMessage("Успешно добавлено");
+                WindowVisibility = Visibility.Hidden;
+            }
+            catch (Exception ex)
+            {
+                ErrorMessage(ex.Message);
+            }
+        }
+
+        protected override void Edit(object obj)
+        {
+           // try
+            //{
+                base.Edit(obj);
+
+                if (SelectedClassID == null)
+                    throw new Exception("Класс не выбран");
+
+                if (SelectedClassID == null)
+                    throw new Exception("Класс не выбран");
+
+                if (!int.TryParse(WorkExperience, out int experince))
+                    throw new Exception("Стаж - некорректный формат");
+
+                if (experince < 0)
+                    throw new Exception("Стаж - некорректный формат");
+
+                DriverModel driverModel = new DriverModel()
+                {
+                    Id = DataModel.Id,
+                    ClassID = SelectedClassID.Id,
+                    BadgeNumber = BadgeNumber,
+                    FullName = FullName,
+                    BirthYear = BirthYear,
+                    WorkExperience = experince,
+                };
+
+                Database.Edit(driverModel);
+                CategoriesEdit(driverModel);
+                SuccessMessage("Успешно добавлено");
+                WindowVisibility = Visibility.Hidden;
+            //}
+            //catch (Exception ex)
+            //{
+            //    ErrorMessage(ex.Message);
+            //}
+        }
+
+        protected void UpdateData()
+        {
+            var list = Database.CategoriesList;
+
+            AllCategories = new ObservableCollection<CategoryModel>(list
+                .Where(d => !_categories.Select(c => c.Id)
+                .Contains(d.Id))
+                .ToList());
+
+        }
+
+        private void CategoriesAdding(object obj)
+        {
+            List<DriverCategories> categories = new List<DriverCategories>(0);
+
+            foreach (var ct in _categories)
+            {
+                categories.Add(new DriverCategories()
+                {
+                    DriverID = DataModel.Id,
+                    CategoryID = ct.Id,
+                });
+            }
+
+            Database.Add(categories);
+        }
+        private void CategoriesEdit(object obj)
+        {
+            List<DriverCategories> categories = new List<DriverCategories>(0);
+
+            foreach (var ct in _categories)
+            {
+                categories.Add(new DriverCategories()
+                {
+                    DriverID = DataModel.Id,
+                    CategoryID = ct.Id,
+                });
+            }
+
+            Database.Edit(categories.ToArray());
+        }
+
+        protected void AddCategory(object obj)
+        {
+            if (_selectedCategory == null)
+            {
+                ErrorMessage("Выберите категорию");
+                return;
+            }
+
+            Categories.Add(_selectedCategory);
+            UpdateData();
+        }
+        protected void DeleteCategory(object obj)
+        {
+            if (_selectedTableCategory == null)
+            {
+                ErrorMessage("Выберите категорию для удаления");
+                return;
+            }
+            Categories.Remove(_selectedTableCategory);
+            UpdateData();
+        }
+    }
+}

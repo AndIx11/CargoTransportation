@@ -1,0 +1,50 @@
+﻿<Window x:Class="OrdersMenu.OrdersEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrdersMenu"
+        mc:Ignorable="d"
+        Title="{Binding Tittle}" Height="450" Width="894"
+	    Visibility="{Binding WindowVisibility, Mode=TwoWay}">
+
+    <Grid>
+        <Label Content="Дата заказа" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,22,0,0" RenderTransformOrigin="0.559,-0.314"/>
+        <Label Content="Клиент-отправитель" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
+
+        <Button VerticalAlignment="Top" Height="37" Margin="310,362,310,0" Content="Запись" Command="{Binding ButtonCommand}"/>
+        <Label Content="Клиент-получатель" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,78,0,0"/>
+        <Label Content="Адрес погрузки" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,107,0,0"/>
+        <ComboBox HorizontalAlignment="Left" Margin="167,54,0,0" VerticalAlignment="Top" Width="188" ItemsSource="{Binding Clients}" SelectedItem="{Binding SelectedSenderClient}" DisplayMemberPath="Name"/>
+        <ComboBox HorizontalAlignment="Left" Margin="167,80,0,0" VerticalAlignment="Top" Width="188" ItemsSource="{Binding Clients}" SelectedItem="{Binding SelectedReceiverClient}" DisplayMemberPath="Name"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="23" Margin="167,108,0,0" Text="{Binding LoadingAddress, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="Адрес разгрузки" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,135,0,0"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="23" Margin="167,136,0,0" Text="{Binding UnloadingAddress, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="23" Margin="167,163,0,0" Text="{Binding RouteLength, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="23" Margin="167,194,0,0" Text="{Binding OrderCost, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="Длина маршрута" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,163,0,0"/>
+        <Label Content="Страховая стоимость" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,191,0,0"/>
+        <DataGrid x:Name="MainTable" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" MaxHeight="385"
+					ItemsSource="{Binding CargoOrders}"
+					SelectedItem="{Binding SelectedCargoOrder, Mode=TwoWay}"
+					AutoGenerateColumns ="False"
+					IsReadOnly="True" Height="285" VerticalAlignment="Top" Margin="406,22,10,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название" Binding="{Binding Cargo.CargoName}" Width="*"/>
+                <DataGridTextColumn Header="Количество" Binding="{Binding Quantity}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Label Content="Автомобиль" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,232,0,0" RenderTransformOrigin="0.559,-0.314" Width="91"/>
+        <Label Content="Экипаж" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,260,0,0" Width="61"/>
+        <Label Content="Дата прибытия" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,317,0,0" Width="108"/>
+        <ComboBox HorizontalAlignment="Left" Margin="162,234,0,0" VerticalAlignment="Top" Width="219" ItemsSource="{Binding Vehicles}" SelectedItem="{Binding SelectedVehicle}" DisplayMemberPath="Name"/>
+        <ComboBox HorizontalAlignment="Left" Margin="162,262,0,0" VerticalAlignment="Top" Width="219" ItemsSource="{Binding Crews}" SelectedItem="{Binding SelectedCrew}" DisplayMemberPath="Name" />
+        <DatePicker HorizontalAlignment="Left" Margin="162,319,0,0" VerticalAlignment="Top" Width="219" SelectedDate="{Binding ReceiverOrderDate, Mode=TwoWay}"/>
+
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="406,323,0,0" VerticalAlignment="Top" Width="89" Command="{Binding AddCargoCommand}"/>
+        <Button Content="Удалить" Margin="795,323,10,0" VerticalAlignment="Top" Command="{Binding DeleteCargoCommand}"/>
+        <DatePicker HorizontalAlignment="Left" Margin="167,22,0,0" VerticalAlignment="Top" Width="219" SelectedDate="{Binding ReceiverOrderDate, Mode=TwoWay}"/>
+    </Grid>
+
+</Window>

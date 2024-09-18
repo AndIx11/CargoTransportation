@@ -1,0 +1,14 @@
+﻿<Window x:Class="AboutMenu.AboutEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AboutMenu"
+        mc:Ignorable="d"
+        Title="AboutWindow" Height="250" Width="560
+        ">
+    <Grid>
+        <Label Content="Эта программа создана студентом третьего курса специальности &quot;Прикладная информатика&#xA;в цифровой экономике&quot; Анисимовым А.А.&#xA;&#xA;Программа создана в рамках выполнения курсовой работы по дисциплине &quot;Базы данных&quot;&#xA;&#xA;Преподаватель: Эстрайх И.В." HorizontalAlignment="Center" Margin="0,10,0,27" Width="538"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="OrdersMenu.CargoOrderEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrdersMenu"
+        mc:Ignorable="d"
+        Title="{Binding Tittle}" Height="352" Width="436"
+	    Visibility="{Binding WindowVisibility, Mode=TwoWay}">
+	<Grid>
+		<Label Content="Груз" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,25,0,0" RenderTransformOrigin="0.559,-0.314" Width="91"/>
+		<ComboBox HorizontalAlignment="Left" Margin="119,27,0,0" VerticalAlignment="Top" Width="219" ItemsSource="{Binding CargosList}" SelectedItem="{Binding SelectedCargo}" DisplayMemberPath="CargoName"/>
+		<Label Content="Ед. измерения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,62,0,0" RenderTransformOrigin="0.559,-0.314" Width="91" />
+		<ComboBox HorizontalAlignment="Left" Margin="119,64,0,0" VerticalAlignment="Top" Width="219" ItemsSource="{Binding UnitsList}" SelectedItem="{Binding SelectedUnit}" DisplayMemberPath="UnitName"/>
+		<Label Content="InsuranceValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,112,0,0"/>
+		<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="248" Height="23" Margin="119,112,0,0" Text="{Binding InsuranceValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+		<Label Content="Quantity" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,142,0,0"/>
+		<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="248" Height="23" Margin="119,142,0,0" Text="{Binding Quantity, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+		<Label Content="TotalWeight" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,170,0,0"/>
+		<TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="248" Height="23" Margin="119,170,0,0" Text="{Binding TotalWeight, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+		<Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="36" Width="146" Margin="0,260,0,0" Content="Запись" Command="{Binding CreateButtonCommand}"/>
+
+	</Grid>
+</Window>
