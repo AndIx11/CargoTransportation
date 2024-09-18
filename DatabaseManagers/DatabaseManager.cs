@@ -378,6 +378,9 @@ namespace DatabaseManagers
             if (bankModel == null || string.IsNullOrEmpty(bankModel.BankName))
                 throw new Exception("Название банка не может быть пустым");
 
+            if(Banks.Any(b => b.BankName == bankModel.BankName))
+                throw new Exception("Банк с таким названием уже существует");
+
             Banks.Add(bankModel);
             SaveChanges();
         }
@@ -386,6 +389,9 @@ namespace DatabaseManagers
         {
             if (bankModel == null || string.IsNullOrEmpty(bankModel.BankName))
                 throw new Exception("Название банка не может быть пустым");
+
+            if (Banks.Any(b => b.BankName == bankModel.BankName && b.Id != bankModel.Id))
+                throw new Exception("Банк с таким названием уже существует");
 
             var bank = Banks.ToList().Find(b => b.Id == bankModel.Id);
             bank.BankName = bankModel.BankName;
@@ -414,6 +420,9 @@ namespace DatabaseManagers
             if (unitModel == null || string.IsNullOrEmpty(unitModel.UnitName))
                 throw new Exception("Название единицы измерения не может быть пустым");
 
+            if (Units.Any(u => u.UnitName == unitModel.UnitName))
+                throw new Exception("Единица измерения с таким названием уже существует");
+
             Units.Add(unitModel);
             SaveChanges();
         }
@@ -422,6 +431,9 @@ namespace DatabaseManagers
         {
             if (unitModel == null || string.IsNullOrEmpty(unitModel.UnitName))
                 throw new Exception("Название единицы измерения не может быть пустым");
+
+            if (Units.Any(u => u.UnitName == unitModel.UnitName && u.Id != unitModel.Id))
+                throw new Exception("Единица измерения с таким названием уже существует");
 
             var unit = Units.Find(unitModel.Id);
             if (unit != null)
@@ -538,6 +550,9 @@ namespace DatabaseManagers
             if (classificationModel == null || string.IsNullOrEmpty(classificationModel.Name))
                 throw new Exception("Название классификации не может быть пустым");
 
+            if (Classifications.Any(c => c.Name == classificationModel.Name))
+                throw new Exception("Классность с таким названием уже существует");
+
             Classifications.Add(classificationModel);
             SaveChanges();
         }
@@ -546,6 +561,9 @@ namespace DatabaseManagers
         {
             if (classificationModel == null || string.IsNullOrEmpty(classificationModel.Name))
                 throw new Exception("Название классификации не может быть пустым");
+
+            if (Classifications.Any(c => c.Name == classificationModel.Name && c.Id != classificationModel.Id))
+                throw new Exception("Классность с таким названием уже существует");
 
             var classification = Classifications.Find(classificationModel.Id);
             if (classification == null)
@@ -577,6 +595,9 @@ namespace DatabaseManagers
             if (categoryModel == null || string.IsNullOrEmpty(categoryModel.Name))
                 throw new Exception("Название категории не может быть пустым");
 
+            if (Categories.Any(c => c.Name == categoryModel.Name))
+                throw new Exception("Категория с таким названием уже существует");
+
             Categories.Add(categoryModel);
             SaveChanges();
         }
@@ -585,6 +606,9 @@ namespace DatabaseManagers
         {
             if (categoryModel == null || string.IsNullOrEmpty(categoryModel.Name))
                 throw new Exception("Название категории не может быть пустым");
+
+            if (Classifications.Any(c => c.Name == categoryModel.Name && c.Id != categoryModel.Id))
+                throw new Exception("Категория с таким названием уже существует");
 
             var category = Categories.Find(categoryModel.Id);
             if (category == null)
@@ -653,7 +677,10 @@ namespace DatabaseManagers
         public void Add(BrandModel brandModel)
         {
             if (brandModel == null || string.IsNullOrEmpty(brandModel.BrandName))
-                throw new Exception("Название бренда не может быть пустым");
+                throw new Exception("Название марки не может быть пустым");
+
+            if (Brands.Any(b => b.BrandName == brandModel.BrandName))
+                throw new Exception("Марка с таким названием уже существует");
 
             Brands.Add(brandModel);
             SaveChanges();
@@ -662,12 +689,15 @@ namespace DatabaseManagers
         public void Edit(BrandModel brandModel)
         {
             if (brandModel == null || string.IsNullOrEmpty(brandModel.BrandName))
-                throw new Exception("Название бренда не может быть пустым");
+                throw new Exception("Название марки не может быть пустым");
+
+            if (Brands.Any(b => b.BrandName == brandModel.BrandName && b.Id != brandModel.Id))
+                throw new Exception("Марка с таким названием уже существует");
 
             var brand = Brands.Find(brandModel.Id);
 
             if (brand == null)
-                throw new Exception("Бренд не найден.");
+                throw new Exception("Марка не найдена.");
 
             brand.BrandName = brandModel.BrandName;
             SaveChanges();
@@ -677,7 +707,7 @@ namespace DatabaseManagers
         {
             var brand = Brands.Find(id);
             if (brand == null)
-                throw new Exception("Бренд не найден.");
+                throw new Exception("Марка не найдена.");
 
             Brands.Remove(brand);
             SaveChanges();
@@ -691,12 +721,23 @@ namespace DatabaseManagers
 
         public void Add(CarModelModel carModel)
         {
+            if (carModel == null || string.IsNullOrEmpty(carModel.ModelName))
+                throw new Exception("Название модели не может быть пустым");
+
+            if (CarModels.Any(c => c.ModelName == carModel.ModelName))
+                throw new Exception("Модель с таким названием уже существует");
             CarModels.Add(carModel);
             SaveChanges();
         }
 
         public void Edit(CarModelModel carModel)
         {
+            if (carModel == null || string.IsNullOrEmpty(carModel.ModelName))
+                throw new Exception("Название модели не может быть пустым");
+
+            if (CarModels.Any(c => c.ModelName == carModel.ModelName && c.Id != carModel.Id))
+                throw new Exception("Модель с таким названием уже существует");
+
             var edit = CarModels.Find(carModel.Id);
 
             if (edit == null)
@@ -728,6 +769,10 @@ namespace DatabaseManagers
 
         public void Add(IndividualModel individualModel, ClientModel clientModel)
         {
+            if (individualModel.FullName.Split(' ').Length != 3 
+                || individualModel.FullName.Split(' ').Length != 2)
+                throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
+
             Clients.Add(clientModel);
 			SaveChanges();
 
@@ -739,6 +784,10 @@ namespace DatabaseManagers
 
         public void Edit(IndividualModel individualModel)
         {
+            if (individualModel.FullName.Split(' ').Length != 3
+                || individualModel.FullName.Split(' ').Length != 2)
+                throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
+
             var edit = Individuals.Find(individualModel.Id);
 
             if (edit == null)
@@ -767,6 +816,10 @@ namespace DatabaseManagers
 
         public void Add(EntityClientModel entityClient, ClientModel clientModel)
         {
+            if (entityClient.CEOName.Split(' ').Length != 3
+                || entityClient.CEOName.Split(' ').Length != 2)
+                throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
+
             Clients.Add(clientModel);
 			SaveChanges();
 
@@ -778,6 +831,10 @@ namespace DatabaseManagers
 
         public void Edit(EntityClientModel entityClient)
         {
+            if (entityClient.CEOName.Split(' ').Length != 3
+                || entityClient.CEOName.Split(' ').Length != 2)
+                throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
+
             var edit = EntityClients.Find(entityClient.Id);
 
             if (edit == null)
@@ -808,12 +865,20 @@ namespace DatabaseManagers
 
         public void Add(DriverModel driver)
         {
+            if (driver.FullName.Split(' ').Length != 3
+                || driver.FullName.Split(' ').Length != 2)
+                throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
+
             Drivers.Add(driver);
             SaveChanges();
         }
 
         public void Edit(DriverModel driver)
         {
+            if (driver.FullName.Split(' ').Length != 3
+                || driver.FullName.Split(' ').Length != 2)
+                throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
+
             var edit = Drivers.Find(driver.Id);
             Entry(edit).CurrentValues.SetValues(driver);
             SaveChanges();
