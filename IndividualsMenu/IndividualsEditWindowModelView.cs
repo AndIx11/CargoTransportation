@@ -107,6 +107,23 @@ namespace IndividualsMenu
             {
                 base.Add(obj);
 
+                if (FullName == "" || FullName == null)
+                    throw new Exception("Строка \"ФИО\" не может быть пустой!");
+
+                if (PasswordNumber == "" || PasswordNumber == null)
+                    throw new Exception("Строка \"Паспортные данные\" не может быть пустой!");
+
+                if (IssueDate == null)
+                    throw new Exception("Строка \"Дата выдачи\" не может быть пустой!");
+                if (IssueDate < DateTime.Now)
+                    throw new Exception("Дата не может быть позже сегодняшнего дня!");
+
+                if (IssuedBy == "" || IssuedBy == null)
+                    throw new Exception("Строка \"Кем выдано\" не может быть пустой!");
+
+                if (Phone == "" || Phone == null)
+                    throw new Exception("Строка \"Телефон\" не может быть пустой!");
+
                 ClientModel clientModel = new ClientModel()
                 { 
                     Phone = Phone,
@@ -137,6 +154,23 @@ namespace IndividualsMenu
             try
             {
                 base.Edit(obj);
+
+                if (FullName == "" || FullName == null)
+                    throw new Exception("Строка \"ФИО\" не может быть пустой!");
+
+                if (PasswordNumber == "" || PasswordNumber == null)
+                    throw new Exception("Строка \"Паспортные данные\" не может быть пустой!");
+
+                if (IssueDate == null)
+                    throw new Exception("Строка \"Дата выдачи\" не может быть пустой!");
+                if (IssueDate < DateTime.Now)
+                    throw new Exception("Дата не может быть позже сегодняшнего дня!");
+
+                if (IssuedBy == "" || IssuedBy == null)
+                    throw new Exception("Строка \"Кем выдано\" не может быть пустой!");
+
+                if (Phone == "" || Phone == null)
+                    throw new Exception("Строка \"Телефон\" не может быть пустой!");
 
                 ClientModel clientModel = new ClientModel()
                 {

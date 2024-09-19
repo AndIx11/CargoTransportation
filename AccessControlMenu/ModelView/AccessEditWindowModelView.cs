@@ -11,6 +11,8 @@ namespace AccessControlMenu
 	{
 		#region FIELDS
 
+		private bool _isAdd;
+
 		private ObservableCollection<MenuItemModel> _menuList;
 		private MenuItemModel _selectedMenu;
 
@@ -76,7 +78,17 @@ namespace AccessControlMenu
 			}
 		}
 
-		public bool ReadAccess
+        public bool IsAdd
+        {
+            get { return _isAdd; }
+            set
+            {
+                _isAdd = value;
+                OnPropertyChanged(nameof(IsAdd));
+            }
+        }
+
+        public bool ReadAccess
 		{
 			get { return _readAccess; }
 			set
@@ -117,14 +129,16 @@ namespace AccessControlMenu
 
 		public AccessEditWindowModelView() : base()
 		{
-			Tittle = "Новый доступ";
+            IsAdd = true;
+            Tittle = "Новый доступ";
 			ButtonText = "Добавить";
 			LoadData();
 		}
 
 		public AccessEditWindowModelView(AccessModel accessModel) : base(accessModel)
 		{
-			Tittle = $"Редактирование доступа";
+            IsAdd = false;
+            Tittle = $"Редактирование доступа";
 			ButtonText = $"Редактировать";
 
 			LoadData();

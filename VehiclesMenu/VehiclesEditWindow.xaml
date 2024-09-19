@@ -19,7 +19,7 @@
         <ComboBox HorizontalAlignment="Left" Margin="119,134,0,0" VerticalAlignment="Top" Width="188" ItemsSource="{Binding BrandsList}" SelectedItem="{Binding SelectedBrand}" DisplayMemberPath="BrandName"/>
         <ComboBox HorizontalAlignment="Left" Margin="118,161,0,0" VerticalAlignment="Top" Width="188" ItemsSource="{Binding ModelsList}" SelectedItem="{Binding SelectedModel}" DisplayMemberPath="ModelName"/>
 
-        <Label Content="Бренд" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,132,0,0"/>
+        <Label Content="Марка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,132,0,0"/>
         <Label Content="Модель" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,159,0,0"/>
         <Label Content="Год кап. ремонта" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,74,0,0"/>
         <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="23" Margin="119,77,0,0" Text="{Binding YearOfOverhaul, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>

@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media.Imaging;
@@ -178,28 +179,44 @@ namespace VehiclesMenu
             {
                 base.Add(obj);
 
-                if(SelectedBrand == null)
-                    throw new Exception("Бренд не выбран");
-
-                if(SelectedModel == null)
-                    throw new Exception("Модель не выбрана");
-
                 if (PayloadCapacity == "")
                     throw new Exception("Не введена грузоподъёмность");
+                if (!int.TryParse(PayloadCapacity, out int payloadCapacity))
+                    throw new Exception("Грузоподъёмность - некорректный формат");
+                if (payloadCapacity <= 0)
+                    throw new Exception("Грузоподъёмность не может быть отрицательной");
 
                 if (YearOfManufacture == "")
                     throw new Exception("Год выпуска отсутствует");
+                if (!int.TryParse(YearOfManufacture, out int yearOfManufacture))
+                    throw new Exception("Год выпуска - некорректный формат");
+                if (yearOfManufacture < 1950 || yearOfManufacture > DateTime.Now.Year)
+                    throw new Exception("Год выпуска не может быть раньше 1950 года и быть позже нынешнего года");
 
                 if (YearOfOverhaul == "")
                     throw new Exception("Год кап. ремонта отсутствует");
+                if (!int.TryParse(YearOfOverhaul, out int yearOfOverhaul))
+                    throw new Exception("Год кап. ремонта - некорректный формат");
+                if (yearOfOverhaul < yearOfManufacture || yearOfOverhaul > DateTime.Now.Year)
+                    throw new Exception("Год кап. ремонта не может быть раньше года выпуска машины и быть позже нынешнего года");
 
                 if (LicencePlate == "")
                     throw new Exception("Гос. номер отсутствует");
+                if (!Regex.IsMatch(LicencePlate, @"^[АВЕКМНОРСТУХ]\d{3}[АВЕКМНОРСТУХ]{2}\s[1]?\d{2}$"))
+                    throw new Exception("Гос. номер не соответствует формату: А777АА 54(154)\nИспользовать можно буквы А, В, Е, К, М, Н, О, Р, С, Т, У, Х.");
+
+                if (SelectedBrand == null)
+                    throw new Exception("Марка не выбрана");
+
+                if (SelectedModel == null)
+                    throw new Exception("Модель не выбрана");
 
                 if (!int.TryParse(Mileage, out int mileage))
-					throw new Exception("Пробег - некорректный формат");
+                    throw new Exception("Пробег - некорректный формат");
+                if (mileage < 0)
+                    throw new Exception("Пробег не может быть отрицательным");
 
-				VehicleModel vehicleModel = new VehicleModel()
+                VehicleModel vehicleModel = new VehicleModel()
 				{
 					BrandID = SelectedBrand.Id,
 					ModelID = SelectedModel.Id,
@@ -228,25 +245,41 @@ namespace VehiclesMenu
                 base.Edit(obj);
 
                 if (SelectedBrand == null)
-                    throw new Exception("Бренд не выбран");
+                    throw new Exception("Марка не выбрана");
 
                 if (SelectedModel == null)
                     throw new Exception("Модель не выбрана");
 
                 if (PayloadCapacity == "")
                     throw new Exception("Не введена грузоподъёмность");
+                if (!int.TryParse(PayloadCapacity, out int payloadCapacity))
+                    throw new Exception("Грузоподъёмность - некорректный формат");
+                if (payloadCapacity <= 0)
+                    throw new Exception("Грузоподъёмность не может быть отрицательной");
 
                 if (YearOfManufacture == "")
                     throw new Exception("Год выпуска отсутствует");
+                if (!int.TryParse(YearOfManufacture, out int yearOfManufacture))
+                    throw new Exception("Год выпуска - некорректный формат");
+                if (yearOfManufacture < 1950 || yearOfManufacture > DateTime.Now.Year)
+                    throw new Exception("Год выпуска не может быть раньше 1950 года и быть позже нынешнего года");
 
                 if (YearOfOverhaul == "")
                     throw new Exception("Год кап. ремонта отсутствует");
+                if (!int.TryParse(YearOfOverhaul, out int yearOfOverhaul))
+                    throw new Exception("Год кап. ремонта - некорректный формат");
+                if (yearOfOverhaul < yearOfManufacture || yearOfOverhaul > DateTime.Now.Year)
+                    throw new Exception("Год кап. ремонта не может быть раньше года выпуска машины и быть позже нынешнего года");
 
                 if (LicencePlate == "")
                     throw new Exception("Гос. номер отсутствует");
+                if (!Regex.IsMatch(LicencePlate, @"^[АВЕКМНОРСТУХ]\d{3}[АВЕКМНОРСТУХ]{2}\s[1]?\d{2}$"))
+                    throw new Exception("Гос. номер не соответствует формату: А777АА 54(154)\n Использовать можно буквы А, В, Е, К, М, Н, О, Р, С, Т, У, Х.");
 
                 if (!int.TryParse(Mileage, out int mileage))
                     throw new Exception("Пробег - некорректный формат");
+                if (mileage < 0)
+                    throw new Exception("Пробег не может быть отрицательным");
 
                 VehicleModel vehicleModel = new VehicleModel()
                 {

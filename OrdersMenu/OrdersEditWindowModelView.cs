@@ -273,21 +273,55 @@ namespace OrdersMenu
             {
                 base.Add(obj);
 
-				if (!double.TryParse(RouteLength, out double routeLength))
-					throw new Exception("Некорректный формат");
+				if (SelectedSenderClient == null)
+                    throw new Exception("Клиент-отправитель не выбран");
 
-				if(!double.TryParse(OrderCost, out double orderCost))
-					throw new Exception("Некорректный формат");
+                if (SelectedReceiverClient == null)
+                    throw new Exception("Клиент-получатель не выбран");
 
-				OrderModel orderModel = new OrderModel()
+				if (LoadingAddress == "")
+                    throw new Exception("Адрес погрузки не выбран");
+
+                if (UnloadingAddress == "")
+                    throw new Exception("Адрес разгрузки не выбран");
+
+				if (OrderDate < DateTime.Now)
+					throw new Exception("Дата заказа не может быть раньше сегодняшнего дня");
+
+                if (RouteLength == null)
+                    throw new Exception("Адрес погрузки не выбран");
+                if (!double.TryParse(RouteLength, out double routeLength))
+					throw new Exception("Некорректный формат");
+				if (routeLength < 0)
+					throw new Exception("Длина маршрута не может быть отрицательной");
+
+                if (OrderCost == null)
+                    throw new Exception("Адрес погрузки не выбран");
+				if (!decimal.TryParse(OrderCost, out decimal orderCost))
+					throw new Exception("Некорректный формат");
+				if (orderCost <= 0)
+					throw new Exception("Страховая стоимость не может быть отрицательной");
+
+
+
+                if (SelectedVehicle == null)
+                    throw new Exception("Автомобиль не выбран");
+
+                if (SelectedCrew == null)
+                    throw new Exception("Адрес погрузки не выбран");
+
+                if (ReceiverOrderDate < OrderDate)
+                    throw new Exception("Дата прибытия заказа не может быть раньше сегодняшнего дня и раньше даты заказа");
+
+                OrderModel orderModel = new OrderModel()
 				{
 					SenderClientID = SelectedSenderClient.Id,
 					ReceiverClientID = SelectedReceiverClient.Id,
-					OrderDate = DateTime.Now.ToShortDateString(),
+					OrderDate = OrderDate.ToShortDateString(),
 					LoadingAddress = LoadingAddress,
 					UnloadingAddress = UnloadingAddress,
 					RouteLength = routeLength,
-					OrderCost = (decimal)orderCost,
+					OrderCost = orderCost,
 				};
 
                 Database.Add(orderModel);
@@ -322,14 +356,45 @@ namespace OrdersMenu
         {
             try
             {
-				if (!double.TryParse(RouteLength, out double routeLength))
-					throw new Exception("Некорректный формат");
+                if (SelectedSenderClient == null)
+                    throw new Exception("Клиент-отправитель не выбран");
 
-				if (!double.TryParse(OrderCost, out double orderCost))
-					throw new Exception("Некорректный формат");
+                if (SelectedReceiverClient == null)
+                    throw new Exception("Клиент-получатель не выбран");
 
-				if (DateTime.Now > ReceiverOrderDate)
-                    throw new Exception("Дата доставки не может быть раньше даты заказа");
+                if (LoadingAddress == "")
+                    throw new Exception("Адрес погрузки не выбран");
+
+                if (UnloadingAddress == "")
+                    throw new Exception("Адрес разгрузки не выбран");
+
+                if (OrderDate < DateTime.Now)
+                    throw new Exception("Дата заказа не может быть раньше сегодняшнего дня");
+
+                if (RouteLength == null)
+                    throw new Exception("Адрес погрузки не выбран");
+                if (!double.TryParse(RouteLength, out double routeLength))
+                    throw new Exception("Некорректный формат");
+                if (routeLength < 0)
+                    throw new Exception("Длина маршрута не может быть отрицательной");
+
+                if (OrderCost == null)
+                    throw new Exception("Адрес погрузки не выбран");
+                if (!decimal.TryParse(OrderCost, out decimal orderCost))
+                    throw new Exception("Некорректный формат");
+                if (orderCost <= 0)
+                    throw new Exception("Страховая стоимость не может быть отрицательной");
+
+
+
+                if (SelectedVehicle == null)
+                    throw new Exception("Автомобиль не выбран");
+
+                if (SelectedCrew == null)
+                    throw new Exception("Адрес погрузки не выбран");
+
+                if (ReceiverOrderDate < OrderDate)
+                    throw new Exception("Дата прибытия заказа не может быть раньше сегодняшнего дня и раньше даты заказа");
 
                 OrderModel orderModel = new OrderModel()
 				{

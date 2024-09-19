@@ -175,15 +175,18 @@ namespace DriversMenu
                 if (SelectedClassID == null)
                     throw new Exception("Классность не выбрана");
 
+                if (BadgeNumber == "")
+                    throw new Exception("Табельный номер не выбран");
+
+                if (BirthYear == "")
+                    throw new Exception("Год рождения не указан");
                 if (!int.TryParse(BirthYear, out int year))
                     throw new Exception("Год рождения – некорректный формат");
-
                 if (year < 1924 || year > DateTime.Now.Year)
                     throw new Exception("Год рождения не может превышать нынешний год и не может быть меньше \"1924\"");
-
+                
                 if (!int.TryParse(WorkExperience, out int experince))
                     throw new Exception("Стаж - некорректный формат");
-
                 if(experince < 0)
                     throw new Exception("Стаж не может быть отрицательным числом");
 
@@ -217,15 +220,18 @@ namespace DriversMenu
                 if (SelectedClassID == null)
                     throw new Exception("Классность не выбрана");
 
+                if (BadgeNumber == "")
+                    throw new Exception("Табельный номер не выбран");
+
+                if (BirthYear == "")
+                    throw new Exception("Год рождения не указан");
                 if (!int.TryParse(BirthYear, out int year))
                     throw new Exception("Год рождения – некорректный формат");
-
                 if (year < 1924 || year > DateTime.Now.Year)
                     throw new Exception("Год рождения не может превышать нынешний год и не может быть меньше \"1924\"");
 
                 if (!int.TryParse(WorkExperience, out int experince))
                     throw new Exception("Стаж - некорректный формат");
-
                 if (experince < 0)
                     throw new Exception("Стаж не может быть отрицательным числом");
 

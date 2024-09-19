@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Text.RegularExpressions;
 
 namespace DatabaseManagers
 {
@@ -522,6 +523,7 @@ namespace DatabaseManagers
             if (client != null)
             {
                 client.Phone = clientModel.Phone;
+                client.Name = clientModel.Name;
                 SaveChanges();
             }
             else
@@ -770,9 +772,15 @@ namespace DatabaseManagers
         public void Add(IndividualModel individualModel, ClientModel clientModel)
         {
             if (individualModel.FullName.Split(' ').Length != 3 
-                || individualModel.FullName.Split(' ').Length != 2)
-                throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
+                && individualModel.FullName.Split(' ').Length != 2)
+                throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)!");
 
+            if (!Regex.IsMatch(individualModel.PassportNumber, @"^\d{4} \d{6}$"))
+                throw new Exception("Формат записи паспротных данных: \"0000 000000\".");
+
+            if (!Regex.IsMatch(individualModel.IssuedBy, @"^[^\d]+$"))
+                throw new Exception("Строка \"Кем выдано\" не может содержать цифры!");
+            
             Clients.Add(clientModel);
 			SaveChanges();
 
@@ -785,8 +793,14 @@ namespace DatabaseManagers
         public void Edit(IndividualModel individualModel)
         {
             if (individualModel.FullName.Split(' ').Length != 3
-                || individualModel.FullName.Split(' ').Length != 2)
-                throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
+                && individualModel.FullName.Split(' ').Length != 2)
+                throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)!");
+
+            if (!Regex.IsMatch(individualModel.PassportNumber, @"^\d{4} \d{6}$"))
+                throw new Exception("Формат записи паспротных данных: \"0000 000000\".");
+
+            if (!Regex.IsMatch(individualModel.IssuedBy, @"^[^\d]+$"))
+                throw new Exception("Строка \"Кем выдано\" не может содержать цифры!");
 
             var edit = Individuals.Find(individualModel.Id);
 
@@ -817,8 +831,11 @@ namespace DatabaseManagers
         public void Add(EntityClientModel entityClient, ClientModel clientModel)
         {
             if (entityClient.CEOName.Split(' ').Length != 3
-                || entityClient.CEOName.Split(' ').Length != 2)
-                throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
+                && entityClient.CEOName.Split(' ').Length != 2)
+                throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)!");
+
+            if (!Regex.IsMatch(entityClient.INN, @"^\d{12}$"))
+                throw new Exception("ИНН состоит из 12-ти подряд идущих цифр!");
 
             Clients.Add(clientModel);
 			SaveChanges();
@@ -832,8 +849,11 @@ namespace DatabaseManagers
         public void Edit(EntityClientModel entityClient)
         {
             if (entityClient.CEOName.Split(' ').Length != 3
-                || entityClient.CEOName.Split(' ').Length != 2)
+                && entityClient.CEOName.Split(' ').Length != 2)
                 throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
+
+            if (!Regex.IsMatch(entityClient.INN, @"^\d{12}$"))
+                throw new Exception("ИНН состоит из 12-ти подряд идущих цифр!");
 
             var edit = EntityClients.Find(entityClient.Id);
 
@@ -866,7 +886,7 @@ namespace DatabaseManagers
         public void Add(DriverModel driver)
         {
             if (driver.FullName.Split(' ').Length != 3
-                || driver.FullName.Split(' ').Length != 2)
+                && driver.FullName.Split(' ').Length != 2)
                 throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
 
             Drivers.Add(driver);
@@ -876,7 +896,7 @@ namespace DatabaseManagers
         public void Edit(DriverModel driver)
         {
             if (driver.FullName.Split(' ').Length != 3
-                || driver.FullName.Split(' ').Length != 2)
+                && driver.FullName.Split(' ').Length != 2)
                 throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
 
             var edit = Drivers.Find(driver.Id);

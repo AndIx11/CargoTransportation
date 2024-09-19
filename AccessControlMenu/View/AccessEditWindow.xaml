@@ -13,7 +13,7 @@
         <Label Content="Пункт Меню" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,56,0,0"/>
         <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="2" Width="167" Margin="132,60,0,0" ItemsSource="{Binding MenuList}" SelectedItem="{Binding SelectedMenu}" DisplayMemberPath="Name"/>
         <Label Content="Пользователь" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,18,0,0"/>
-        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="2" Width="167" Margin="132,22,0,0" ItemsSource="{Binding UserList}" SelectedItem="{Binding SelectedUser}" DisplayMemberPath="Login"/>
+        <ComboBox IsEnabled="{Binding IsAdd}" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="2" Width="167" Margin="132,22,0,0" ItemsSource="{Binding UserList}" SelectedItem="{Binding SelectedUser}" DisplayMemberPath="Login"/>
 
         <CheckBox Content="Чтение" BorderBrush="#9BBDD3" BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,113,0,0" IsChecked="{Binding ReadAccess, Mode=TwoWay}"/>
         <CheckBox Content="Добавлние" BorderBrush="#9BBDD3" BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="184,150,0,0" IsChecked="{Binding AddAccess, Mode=TwoWay}"/>

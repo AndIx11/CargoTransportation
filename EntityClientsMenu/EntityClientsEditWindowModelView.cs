@@ -129,6 +129,24 @@ namespace EntityClientsMenu
             {
                 base.Add(obj);
 
+                if (Name == "" || Name == null)
+                    throw new Exception("Строка \"Название\" не может быть пустой!");
+
+                if (CEOName == "" || CEOName == null)
+                    throw new Exception("Строка \"ФИО руководителя\" не может быть пустой!");
+
+                if (INN == "" || INN == null)
+                    throw new Exception("Строка \"ИНН\" не может быть пустой!");
+
+                if (Phone == "" || Phone == null)
+                    throw new Exception("Строка \"Телефон\" не может быть пустой!");
+
+                if (LegalAddress == "" || LegalAddress == null)
+                    throw new Exception("Строка \"Юридический адрес\" не может быть пустой!");
+
+                if (SelectedBank == null)
+                    throw new Exception("Строка \"Банк клиента\" не может быть пустой!");
+
                 ClientModel clientModel = new ClientModel()
                 { 
                     Phone = Phone,
@@ -160,7 +178,25 @@ namespace EntityClientsMenu
             {
                 base.Edit(obj);
 
-				ClientModel clientModel = new ClientModel()
+                if (Name == "" || Name == null)
+                    throw new Exception("Строка \"ФИО\" не может быть пустой!");
+
+                if (CEOName == "" || CEOName == null)
+                    throw new Exception("Строка \"Паспортные данные\" не может быть пустой!");
+
+                if (INN == "" || INN == null)
+                    throw new Exception("Строка \"ИНН\" не может быть пустой!");
+
+                if (Phone == "" || Phone == null)
+                    throw new Exception("Строка \"Телефон\" не может быть пустой!");
+
+                if (LegalAddress == "" || LegalAddress == null)
+                    throw new Exception("Строка \"Юридический адрес\" не может быть пустой!");
+
+                if (SelectedBank == null)
+                    throw new Exception("Строка \"Банк клиента\" не может быть пустой!");
+
+                ClientModel clientModel = new ClientModel()
 				{
                     Id = (DataModel as EntityClientModel).ClientID,
 					Phone = Phone,
