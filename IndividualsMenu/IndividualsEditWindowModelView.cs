@@ -1,12 +1,7 @@
 ﻿using DatabaseManagers;
 using ModelViewSystem;
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace IndividualsMenu
@@ -26,7 +21,7 @@ namespace IndividualsMenu
             {
                 if (_fullName != value)
                 {
-					_fullName = value;
+                    _fullName = value;
                     OnPropertyChanged(nameof(FullName));
                 }
             }
@@ -38,25 +33,25 @@ namespace IndividualsMenu
             {
                 if (_passwordNumber != value)
                 {
-					_passwordNumber = value;
+                    _passwordNumber = value;
                     OnPropertyChanged(nameof(PasswordNumber));
                 }
             }
         }
         public DateTime IssueDate
-		{
+        {
             get => _issueDate;
             set
             {
                 if (_issueDate != value)
                 {
-					_issueDate = value;
+                    _issueDate = value;
                     OnPropertyChanged(nameof(IssueDate));
                 }
             }
         }
         public string IssuedBy
-		{
+        {
             get => _issuedBy;
             set
             {
@@ -69,38 +64,38 @@ namespace IndividualsMenu
         }
         public string Phone
         {
-			get => _phone;
-			set
-			{
-				if (_phone != value)
-				{
-					_phone = value;
-					OnPropertyChanged(nameof(Phone));
-				}
-			}
-		}
+            get => _phone;
+            set
+            {
+                if (_phone != value)
+                {
+                    _phone = value;
+                    OnPropertyChanged(nameof(Phone));
+                }
+            }
+        }
 
 
-		public IndividualsEditWindowModelView() : base()
+        public IndividualsEditWindowModelView() : base()
         {
             Tittle = "Новое физ. лицо";
 
             FullName = "";
-			PasswordNumber = "";
-			IssueDate = DateTime.Now;
-			IssuedBy = "";
-		}
+            PasswordNumber = "";
+            IssueDate = DateTime.Now;
+            IssuedBy = "";
+        }
 
         public IndividualsEditWindowModelView(IndividualModel individualModel) : base(individualModel)
         {
             Tittle = "Редактирование физ. лица";
 
-			FullName = individualModel.FullName;
+            FullName = individualModel.FullName;
             PasswordNumber = individualModel.PassportNumber;
-			IssueDate = DateTime.Parse(individualModel.IssueDate);
-			IssuedBy = individualModel.IssuedBy;
+            IssueDate = DateTime.Parse(individualModel.IssueDate);
+            IssuedBy = individualModel.IssuedBy;
             Phone = individualModel.Client.Phone;
-		}
+        }
 
         protected override void Add(object obj)
         {
@@ -128,7 +123,7 @@ namespace IndividualsMenu
                     throw new Exception("Используйте российские стандарты номеров!\nНапример: +7(ххх)ххх-хх-хх; 8хххххххххх; (495)ххххххх и т.д.");
 
                 ClientModel clientModel = new ClientModel()
-                { 
+                {
                     Phone = Phone,
                     Name = FullName,
                 };
@@ -140,7 +135,7 @@ namespace IndividualsMenu
                     IssueDate = IssueDate.ToShortDateString(),
                     IssuedBy = IssuedBy,
                 };
-                
+
 
                 Database.Add(individualModel, clientModel);
                 SuccessMessage("Успешно отредактировано");
@@ -186,14 +181,14 @@ namespace IndividualsMenu
 
 
                 IndividualModel individualModel = new IndividualModel()
-				{
+                {
                     Id = DataModel.Id,
-					FullName = FullName,
-					PassportNumber = PasswordNumber,
-					IssueDate = IssueDate.ToShortDateString(),
-					IssuedBy = IssuedBy,
+                    FullName = FullName,
+                    PassportNumber = PasswordNumber,
+                    IssueDate = IssueDate.ToShortDateString(),
+                    IssuedBy = IssuedBy,
                     ClientID = clientModel.Id,
-				};
+                };
 
                 Database.Edit(clientModel);
                 Database.Edit(individualModel);

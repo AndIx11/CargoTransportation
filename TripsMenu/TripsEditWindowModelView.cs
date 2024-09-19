@@ -4,8 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace TripsMenu
@@ -178,7 +176,7 @@ namespace TripsMenu
                 if (!int.TryParse(WorkExperience, out int experince))
                     throw new Exception("Стаж - некорректный формат");
 
-                if(experince < 0)
+                if (experince < 0)
                     throw new Exception("Стаж - некорректный формат");
 
                 DriverModel driverModel = new DriverModel()
@@ -189,7 +187,7 @@ namespace TripsMenu
                     BirthYear = BirthYear,
                     WorkExperience = experince,
                 };
-                
+
 
                 Database.Add(driverModel);
                 CategoriesAdding(driverModel);

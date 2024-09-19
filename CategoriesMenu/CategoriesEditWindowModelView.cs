@@ -1,10 +1,6 @@
 ﻿using DatabaseManagers;
 using ModelViewSystem;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace CategoriesMenu
@@ -58,7 +54,7 @@ namespace CategoriesMenu
                     throw new Exception("Название не может быть пустым");
 
                 CategoryModel categoryModel = new CategoryModel()
-                {                    
+                {
                     Name = Name,
                     Description = Description,
                 };

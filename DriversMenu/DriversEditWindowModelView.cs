@@ -4,8 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace DriversMenu
@@ -184,10 +182,10 @@ namespace DriversMenu
                     throw new Exception("Год рождения – некорректный формат");
                 if (year < 1924 || year > DateTime.Now.Year)
                     throw new Exception("Год рождения не может превышать нынешний год и не может быть меньше \"1924\"");
-                
+
                 if (!int.TryParse(WorkExperience, out int experince))
                     throw new Exception("Стаж - некорректный формат");
-                if(experince < 0)
+                if (experince < 0)
                     throw new Exception("Стаж не может быть отрицательным числом");
 
                 DriverModel driverModel = new DriverModel()
@@ -198,7 +196,7 @@ namespace DriversMenu
                     BirthYear = BirthYear,
                     WorkExperience = experince,
                 };
-                
+
 
                 Database.Add(driverModel);
                 CategoriesAdding(driverModel);

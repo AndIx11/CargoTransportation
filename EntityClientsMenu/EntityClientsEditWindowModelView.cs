@@ -1,12 +1,8 @@
 ﻿using DatabaseManagers;
 using ModelViewSystem;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace EntityClientsMenu
@@ -28,7 +24,7 @@ namespace EntityClientsMenu
             get { return _banks; }
             set
             {
-				_banks = value;
+                _banks = value;
                 OnPropertyChanged(nameof(Banks));
             }
         }
@@ -37,7 +33,7 @@ namespace EntityClientsMenu
             get { return _selectedBank; }
             set
             {
-				_selectedBank = value;
+                _selectedBank = value;
                 OnPropertyChanged(nameof(SelectedBank));
             }
         }
@@ -49,7 +45,7 @@ namespace EntityClientsMenu
             {
                 if (_name != value)
                 {
-					_name = value;
+                    _name = value;
                     OnPropertyChanged(nameof(Name));
                 }
             }
@@ -61,7 +57,7 @@ namespace EntityClientsMenu
             {
                 if (_ceoName != value)
                 {
-					_ceoName = value;
+                    _ceoName = value;
                     OnPropertyChanged(nameof(CEOName));
                 }
             }
@@ -73,7 +69,7 @@ namespace EntityClientsMenu
             {
                 if (_inn != value)
                 {
-					_inn = value;
+                    _inn = value;
                     OnPropertyChanged(nameof(INN));
                 }
             }
@@ -85,23 +81,23 @@ namespace EntityClientsMenu
             {
                 if (_legalAddress != value)
                 {
-					_legalAddress = value;
+                    _legalAddress = value;
                     OnPropertyChanged(nameof(LegalAddress));
                 }
             }
         }
         public string Phone
-		{
-			get => _phone;
-			set
-			{
-				if (_phone != value)
-				{
-					_phone = value;
-					OnPropertyChanged(nameof(Phone));
-				}
-			}
-		}
+        {
+            get => _phone;
+            set
+            {
+                if (_phone != value)
+                {
+                    _phone = value;
+                    OnPropertyChanged(nameof(Phone));
+                }
+            }
+        }
 
 
         public EntityClientsEditWindowModelView() : base()
@@ -113,7 +109,7 @@ namespace EntityClientsMenu
         public EntityClientsEditWindowModelView(EntityClientModel clientModel) : base(clientModel)
         {
             Tittle = "Редактирование клиента";
-			Banks = new ObservableCollection<BankModel>(Database.BanksList);
+            Banks = new ObservableCollection<BankModel>(Database.BanksList);
             SelectedBank = clientModel.Bank;
 
             Name = clientModel.Name;
@@ -151,13 +147,13 @@ namespace EntityClientsMenu
                     throw new Exception("Строка \"Банк клиента\" не может быть пустой!");
 
                 ClientModel clientModel = new ClientModel()
-                { 
+                {
                     Phone = Phone,
                     Name = Name,
                 };
 
                 EntityClientModel entityClientModel = new EntityClientModel()
-                { 
+                {
                     Name = Name,
                     CEOName = CEOName,
                     INN = INN,
@@ -202,24 +198,24 @@ namespace EntityClientsMenu
                     throw new Exception("Строка \"Банк клиента\" не может быть пустой!");
 
                 ClientModel clientModel = new ClientModel()
-				{
+                {
                     Id = (DataModel as EntityClientModel).ClientID,
-					Phone = Phone,
+                    Phone = Phone,
                     Name = Name,
                 };
 
-				EntityClientModel entityClientModel = new EntityClientModel()
-				{
+                EntityClientModel entityClientModel = new EntityClientModel()
+                {
                     Id = DataModel.Id,
-					Name = Name,
-					CEOName = CEOName,
-					INN = INN,
-					LegalAddress = LegalAddress,
-					BankID = SelectedBank.Id,
+                    Name = Name,
+                    CEOName = CEOName,
+                    INN = INN,
+                    LegalAddress = LegalAddress,
+                    BankID = SelectedBank.Id,
                     ClientID = clientModel.Id,
-				};
+                };
 
-				Database.Edit(entityClientModel);
+                Database.Edit(entityClientModel);
                 Database.Edit(clientModel);
                 SuccessMessage("Успешно отредактировано");
                 WindowVisibility = Visibility.Hidden;

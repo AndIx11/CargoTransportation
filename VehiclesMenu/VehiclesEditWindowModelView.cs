@@ -2,13 +2,9 @@
 using Microsoft.Win32;
 using ModelViewSystem;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media.Imaging;
 
@@ -28,20 +24,20 @@ namespace VehiclesMenu
         private string _licencePlate;
         private string _mileage;
 
-		private BitmapImage _imageProperty;
+        private BitmapImage _imageProperty;
         private byte[] _imageData;
 
-		public BitmapImage ImageProperty
-		{
-			get => _imageProperty;
-			set
-			{
-				_imageProperty = value;
-				OnPropertyChanged(nameof(ImageProperty));
-			}
-		}
+        public BitmapImage ImageProperty
+        {
+            get => _imageProperty;
+            set
+            {
+                _imageProperty = value;
+                OnPropertyChanged(nameof(ImageProperty));
+            }
+        }
 
-		public ObservableCollection<BrandModel> BrandsList
+        public ObservableCollection<BrandModel> BrandsList
         {
             get { return _brandsList; }
             set
@@ -133,18 +129,18 @@ namespace VehiclesMenu
         public string Mileage
         {
             get => _mileage;
-            set 
+            set
             {
                 if (_mileage != value)
                 {
                     _mileage = value;
-					OnPropertyChanged(nameof(Mileage));
-				}
+                    OnPropertyChanged(nameof(Mileage));
+                }
             }
         }
 
 
-		public VehiclesEditWindowModelView() : base()
+        public VehiclesEditWindowModelView() : base()
         {
             Tittle = "Новый автомобиль";
             BrandsList = new ObservableCollection<BrandModel>(Database.BrandsList);
@@ -168,10 +164,10 @@ namespace VehiclesMenu
             LicencePlate = vehicleModel.LicencePlate;
             Mileage = vehicleModel.Mileage.ToString();
             ImageLoadCommand = new ButtonCommand(LoadImage);
-			ImageProperty = LoadImageFromDatabase(vehicleModel.Photo);
+            ImageProperty = LoadImageFromDatabase(vehicleModel.Photo);
 
             _imageData = vehicleModel.Photo;
-		}
+        }
 
         protected override void Add(object obj)
         {
@@ -217,18 +213,18 @@ namespace VehiclesMenu
                     throw new Exception("Пробег не может быть отрицательным");
 
                 VehicleModel vehicleModel = new VehicleModel()
-				{
-					BrandID = SelectedBrand.Id,
-					ModelID = SelectedModel.Id,
+                {
+                    BrandID = SelectedBrand.Id,
+                    ModelID = SelectedModel.Id,
                     PayloadCapacity = PayloadCapacity,
                     YearOfManufacture = YearOfManufacture,
                     YearOfOverhaul = YearOfOverhaul,
                     LicencePlate = LicencePlate,
                     Photo = _imageData,
-					Mileage = mileage,
-				};
+                    Mileage = mileage,
+                };
 
-				Database.Add(vehicleModel);
+                Database.Add(vehicleModel);
                 SuccessMessage("Успешно добавлено");
                 WindowVisibility = Visibility.Hidden;
             }
@@ -292,7 +288,7 @@ namespace VehiclesMenu
                     LicencePlate = LicencePlate,
                     Photo = _imageData,
                     Mileage = mileage,
-				};
+                };
 
                 Database.Edit(vehicleModel);
                 SuccessMessage("Успешно отредактировано");
@@ -304,43 +300,43 @@ namespace VehiclesMenu
             }
         }
 
-		public BitmapImage LoadImageFromDatabase(byte[] imageData)
-		{
-	        using (var stream = new MemoryStream(imageData))
-			{
-				BitmapImage bitmap = new BitmapImage();
-				bitmap.BeginInit();
-				bitmap.StreamSource = stream;
-				bitmap.CacheOption = BitmapCacheOption.OnLoad;
-				bitmap.EndInit();
-				return bitmap;
-			}
-		}
+        public BitmapImage LoadImageFromDatabase(byte[] imageData)
+        {
+            using (var stream = new MemoryStream(imageData))
+            {
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.StreamSource = stream;
+                bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                bitmap.EndInit();
+                return bitmap;
+            }
+        }
 
-		public byte[] LoadImageFile()
-		{
-			OpenFileDialog openFileDialog = new OpenFileDialog();
-			openFileDialog.Filter = "Image Files|*.png;*.jpg;*.jpeg;*.bmp;*.gif";
+        public byte[] LoadImageFile()
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.png;*.jpg;*.jpeg;*.bmp;*.gif";
 
-			if (openFileDialog.ShowDialog() == true)
-			{
+            if (openFileDialog.ShowDialog() == true)
+            {
                 _imageData = File.ReadAllBytes(openFileDialog.FileName);
-				return _imageData;
-			}
+                return _imageData;
+            }
 
-			return null; 
-		}
+            return null;
+        }
 
         protected void LoadImage(object obj)
         {
             try
             {
                 var file = LoadImageFile();
-				ImageProperty = LoadImageFromDatabase(file);
-               
-			}
+                ImageProperty = LoadImageFromDatabase(file);
+
+            }
             catch (Exception ex)
             { }
-		}
-	}
+        }
+    }
 }

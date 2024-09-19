@@ -4,8 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace CargosInOrdersMenu
@@ -178,7 +176,7 @@ namespace CargosInOrdersMenu
                 if (!int.TryParse(WorkExperience, out int experince))
                     throw new Exception("Стаж - некорректный формат");
 
-                if(experince < 0)
+                if (experince < 0)
                     throw new Exception("Стаж - некорректный формат");
 
                 DriverModel driverModel = new DriverModel()
@@ -189,7 +187,7 @@ namespace CargosInOrdersMenu
                     BirthYear = BirthYear,
                     WorkExperience = experince,
                 };
-                
+
 
                 Database.Add(driverModel);
                 CategoriesAdding(driverModel);
@@ -204,33 +202,33 @@ namespace CargosInOrdersMenu
 
         protected override void Edit(object obj)
         {
-           // try
+            // try
             //{
-                base.Edit(obj);
+            base.Edit(obj);
 
-                if (SelectedClassID == null)
-                    throw new Exception("Класс не выбран");
+            if (SelectedClassID == null)
+                throw new Exception("Класс не выбран");
 
-                if (!int.TryParse(WorkExperience, out int experince))
-                    throw new Exception("Стаж - некорректный формат");
+            if (!int.TryParse(WorkExperience, out int experince))
+                throw new Exception("Стаж - некорректный формат");
 
-                if (experince < 0)
-                    throw new Exception("Стаж - некорректный формат");
+            if (experince < 0)
+                throw new Exception("Стаж - некорректный формат");
 
-                DriverModel driverModel = new DriverModel()
-                {
-                    Id = DataModel.Id,
-                    ClassID = SelectedClassID.Id,
-                    BadgeNumber = BadgeNumber,
-                    FullName = FullName,
-                    BirthYear = BirthYear,
-                    WorkExperience = experince,
-                };
+            DriverModel driverModel = new DriverModel()
+            {
+                Id = DataModel.Id,
+                ClassID = SelectedClassID.Id,
+                BadgeNumber = BadgeNumber,
+                FullName = FullName,
+                BirthYear = BirthYear,
+                WorkExperience = experince,
+            };
 
-                Database.Edit(driverModel);
-                CategoriesEdit(driverModel);
-                SuccessMessage("Успешно добавлено");
-                WindowVisibility = Visibility.Hidden;
+            Database.Edit(driverModel);
+            CategoriesEdit(driverModel);
+            SuccessMessage("Успешно добавлено");
+            WindowVisibility = Visibility.Hidden;
             //}
             //catch (Exception ex)
             //{

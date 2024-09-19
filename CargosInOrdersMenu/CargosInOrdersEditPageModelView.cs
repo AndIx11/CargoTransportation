@@ -1,9 +1,8 @@
-﻿using System;
+﻿using DatabaseManagers;
+using ModelViewSystem;
+using System;
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
-using DatabaseManagers;
-using ModelViewSystem;
-using DataExport;
 
 namespace CargosInOrdersMenu
 {
@@ -14,12 +13,12 @@ namespace CargosInOrdersMenu
         public CargosInOrdersEditPageModelView(Button[] buttons, DataGrid dataGrid, AccessInfo access) : base(buttons, dataGrid, access)
         {
             buttons[1].Visibility = System.Windows.Visibility.Hidden;
-			buttons[2].Visibility = System.Windows.Visibility.Hidden;
-			buttons[3].Visibility = System.Windows.Visibility.Hidden;
+            buttons[2].Visibility = System.Windows.Visibility.Hidden;
+            buttons[3].Visibility = System.Windows.Visibility.Hidden;
 
-			ExportCommand = new ButtonCommand(Export);
-			buttons[5].Command = ExportCommand;
-		}
+            ExportCommand = new ButtonCommand(Export);
+            buttons[5].Command = ExportCommand;
+        }
 
         protected override void Add(object obj)
         {
@@ -77,17 +76,17 @@ namespace CargosInOrdersMenu
 
         protected void Export(object obj)
         {
-			try
-			{
+            try
+            {
                 SuccessMessage("Экспорт");
                 DataExport.DocumentExporter.GetInstance().CreateCargoTable(Database.CargoOrdersList);
                 SuccessMessage("Документ успешно создан");
-			}
-			catch (Exception ex)
-			{
-				ErrorMessage("Невозможно создать документ.");
-			}
-		}
+            }
+            catch (Exception ex)
+            {
+                ErrorMessage("Невозможно создать документ.");
+            }
+        }
 
     }
 }

@@ -1,10 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System;
+﻿using System;
 using System.Text;
 
 namespace DatabaseManagers
 {
-	public static class Encryption
+    public static class Encryption
 	{
 		private const string Key = "14gtpsdpssdgomss12f";
 
