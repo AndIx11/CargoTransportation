@@ -297,7 +297,7 @@ namespace OrdersMenu
                     throw new Exception("Адрес погрузки не выбран");
                 if (!decimal.TryParse(OrderCost, out decimal orderCost))
                     throw new Exception("Некорректный формат");
-                if (orderCost <= 0)
+                if (orderCost < 0)
                     throw new Exception("Страховая стоимость не может быть отрицательной");
 
 
@@ -377,7 +377,7 @@ namespace OrdersMenu
                     throw new Exception("Адрес погрузки не выбран");
                 if (!decimal.TryParse(OrderCost, out decimal orderCost))
                     throw new Exception("Некорректный формат");
-                if (orderCost <= 0)
+                if (orderCost < 0)
                     throw new Exception("Страховая стоимость не может быть отрицательной");
 
 
