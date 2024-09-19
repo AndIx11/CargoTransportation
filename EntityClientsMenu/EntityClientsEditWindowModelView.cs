@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -140,6 +141,8 @@ namespace EntityClientsMenu
 
                 if (Phone == "" || Phone == null)
                     throw new Exception("Строка \"Телефон\" не может быть пустой!");
+                if (!Regex.IsMatch(Phone, @"^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"))
+                    throw new Exception("Используйте российские стандарты номеров!\nНапример: +7(ххх)ххх-хх-хх; 8хххххххххх; (495)ххххххх и т.д.");
 
                 if (LegalAddress == "" || LegalAddress == null)
                     throw new Exception("Строка \"Юридический адрес\" не может быть пустой!");
@@ -189,6 +192,8 @@ namespace EntityClientsMenu
 
                 if (Phone == "" || Phone == null)
                     throw new Exception("Строка \"Телефон\" не может быть пустой!");
+                if (!Regex.IsMatch(Phone, @"^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"))
+                    throw new Exception("Используйте российские стандарты номеров!\nНапример: +7(ххх)ххх-хх-хх; 8хххххххххх; (495)ххххххх и т.д.");
 
                 if (LegalAddress == "" || LegalAddress == null)
                     throw new Exception("Строка \"Юридический адрес\" не может быть пустой!");

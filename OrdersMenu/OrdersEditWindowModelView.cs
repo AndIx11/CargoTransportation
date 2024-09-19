@@ -285,7 +285,7 @@ namespace OrdersMenu
                 if (UnloadingAddress == "")
                     throw new Exception("Адрес разгрузки не выбран");
 
-				if (OrderDate < DateTime.Now)
+				if (OrderDate < DateTime.Today)
 					throw new Exception("Дата заказа не может быть раньше сегодняшнего дня");
 
                 if (RouteLength == null)
@@ -368,9 +368,6 @@ namespace OrdersMenu
                 if (UnloadingAddress == "")
                     throw new Exception("Адрес разгрузки не выбран");
 
-                if (OrderDate < DateTime.Now)
-                    throw new Exception("Дата заказа не может быть раньше сегодняшнего дня");
-
                 if (RouteLength == null)
                     throw new Exception("Адрес погрузки не выбран");
                 if (!double.TryParse(RouteLength, out double routeLength))
@@ -401,11 +398,11 @@ namespace OrdersMenu
 					Id = DataModel.Id,
 					SenderClientID = SelectedSenderClient.Id,
 					ReceiverClientID = SelectedReceiverClient.Id,
-					OrderDate = DateTime.Now.ToShortDateString(),
+					OrderDate = OrderDate.ToShortDateString(),
 					LoadingAddress = LoadingAddress,
 					UnloadingAddress = UnloadingAddress,
 					RouteLength = routeLength,
-					OrderCost = (decimal)orderCost,
+					OrderCost = orderCost,
 				};
 
 				Database.Edit(orderModel);

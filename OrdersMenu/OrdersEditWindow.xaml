@@ -42,7 +42,7 @@
         <ComboBox HorizontalAlignment="Left" Margin="162,262,0,0" VerticalAlignment="Top" Width="219" ItemsSource="{Binding Crews}" SelectedItem="{Binding SelectedCrew}" DisplayMemberPath="Name" />
         <DatePicker HorizontalAlignment="Left" Margin="162,319,0,0" VerticalAlignment="Top" Width="219" SelectedDate="{Binding ReceiverOrderDate, Mode=TwoWay}"/>
 
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="406,323,0,0" VerticalAlignment="Top" Width="89" Command="{Binding AddCargoCommand}"/>
+        <Button Content="Добавить груз" HorizontalAlignment="Left" Margin="406,323,0,0" VerticalAlignment="Top" Width="89" Command="{Binding AddCargoCommand}" Click="Button_Click"/>
         <Button Content="Удалить" Margin="795,323,10,0" VerticalAlignment="Top" Command="{Binding DeleteCargoCommand}"/>
         <DatePicker HorizontalAlignment="Left" Margin="167,22,0,0" VerticalAlignment="Top" Width="219" SelectedDate="{Binding ReceiverOrderDate, Mode=TwoWay}"/>
     </Grid>

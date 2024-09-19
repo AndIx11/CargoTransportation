@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -115,7 +116,7 @@ namespace IndividualsMenu
 
                 if (IssueDate == null)
                     throw new Exception("Строка \"Дата выдачи\" не может быть пустой!");
-                if (IssueDate < DateTime.Now)
+                if (IssueDate > DateTime.Now)
                     throw new Exception("Дата не может быть позже сегодняшнего дня!");
 
                 if (IssuedBy == "" || IssuedBy == null)
@@ -123,6 +124,8 @@ namespace IndividualsMenu
 
                 if (Phone == "" || Phone == null)
                     throw new Exception("Строка \"Телефон\" не может быть пустой!");
+                if (!Regex.IsMatch(Phone, @"^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"))
+                    throw new Exception("Используйте российские стандарты номеров!\nНапример: +7(ххх)ххх-хх-хх; 8хххххххххх; (495)ххххххх и т.д.");
 
                 ClientModel clientModel = new ClientModel()
                 { 
@@ -163,7 +166,7 @@ namespace IndividualsMenu
 
                 if (IssueDate == null)
                     throw new Exception("Строка \"Дата выдачи\" не может быть пустой!");
-                if (IssueDate < DateTime.Now)
+                if (IssueDate > DateTime.Now)
                     throw new Exception("Дата не может быть позже сегодняшнего дня!");
 
                 if (IssuedBy == "" || IssuedBy == null)
@@ -171,6 +174,8 @@ namespace IndividualsMenu
 
                 if (Phone == "" || Phone == null)
                     throw new Exception("Строка \"Телефон\" не может быть пустой!");
+                if (!Regex.IsMatch(Phone, @"^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"))
+                    throw new Exception("Используйте российские стандарты номеров!\nНапример: +7(ххх)ххх-хх-хх; 8хххххххххх; (495)ххххххх и т.д.");
 
                 ClientModel clientModel = new ClientModel()
                 {
