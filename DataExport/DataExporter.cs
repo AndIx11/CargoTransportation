@@ -50,7 +50,7 @@ namespace DataExport
         {
             ExcelDocumentCreator excelDocumentCreator = new ExcelDocumentCreator();
 
-            string[] titles = new string[] { "Id", "Номер заказа", "Отправитель", "Получатель", "Дата", "Экипаж" };
+            string[] titles = new string[] { "Id", "Номер заказа", "Отправитель", "Дата заказа", "Получатель", "Дата получения", "Адрес погрузки", "Адрес разгрузки", "Автомобиль", "Гос. номер", "Экипаж" };
             string[,] data = new string[trips.Count, titles.Length];
 
             // Заполняем данные для таблицы
@@ -60,10 +60,15 @@ namespace DataExport
 
                 data[i, 0] = dataModel.Id.ToString();
                 data[i, 1] = dataModel.Order.Id.ToString();
-                data[i, 2] = dataModel.Order.ReceiverClient.Name;
-                data[i, 3] = dataModel.Order.SenderClient.Name;
-                data[i, 4] = dataModel.Data;
-                data[i, 5] = dataModel.Crew.Name.ToString();
+                data[i, 2] = dataModel.Order.SenderClient.Name;
+                data[i, 3] = dataModel.Order.OrderDate;
+                data[i, 4] = dataModel.Order.ReceiverClient.Name;
+                data[i, 5] = dataModel.Data;
+                data[i, 6] = dataModel.Order.LoadingAddress;
+                data[i, 7] = dataModel.Order.UnloadingAddress;
+                data[i, 8] = dataModel.Vehicle.Brand.BrandName;
+                data[i, 9] = dataModel.Vehicle.LicencePlate;
+                data[i, 10] = dataModel.Crew.Name.ToString();
             }
 
             string filePath = GetFolder();
@@ -78,7 +83,7 @@ namespace DataExport
         {
             ExcelDocumentCreator excelDocumentCreator = new ExcelDocumentCreator();
 
-            string[] titles = new string[] { "Id", "Номер заказа", "Отправитель", "Получатель", "Наименование", "Количество", "Дата доставки" };
+            string[] titles = new string[] { "Id", "Номер заказа", "Отправитель", "Получатель", "Наименование", "Количество" };
             string[,] data = new string[cargoList.Count, titles.Length];
 
             // Заполняем данные для таблицы
@@ -91,9 +96,7 @@ namespace DataExport
                 data[i, 2] = dataModel.Order.ReceiverClient.Name;
                 data[i, 3] = dataModel.Order.SenderClient.Name;
                 data[i, 4] = dataModel.Cargo.CargoName;
-                data[i, 5] = $"{dataModel.Quantity} {dataModel.Unit}";
-                data[i, 6] = dataModel.Order.OrderDate;
-
+                data[i, 5] = $"{dataModel.Quantity} {dataModel.Unit.UnitName}";
             }
 
             string filePath = GetFolder();

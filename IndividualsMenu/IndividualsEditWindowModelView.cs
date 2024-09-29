@@ -190,10 +190,10 @@ namespace IndividualsMenu
                     ClientID = clientModel.Id,
                 };
 
-                Database.Edit(clientModel);
                 Database.Edit(individualModel);
+				Database.Edit(clientModel);
 
-                SuccessMessage("Успешно отредактировано");
+				SuccessMessage("Успешно отредактировано");
                 WindowVisibility = Visibility.Hidden;
             }
             catch (Exception ex)

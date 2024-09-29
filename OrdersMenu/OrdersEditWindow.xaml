@@ -44,7 +44,7 @@
 
         <Button Content="Добавить груз" HorizontalAlignment="Left" Margin="406,323,0,0" VerticalAlignment="Top" Width="89" Command="{Binding AddCargoCommand}"/>
         <Button Content="Удалить" Margin="795,323,10,0" VerticalAlignment="Top" Command="{Binding DeleteCargoCommand}"/>
-        <DatePicker HorizontalAlignment="Left" Margin="167,22,0,0" VerticalAlignment="Top" Width="219" SelectedDate="{Binding ReceiverOrderDate, Mode=TwoWay}"/>
+        <DatePicker IsEnabled="{Binding IsAdd}" HorizontalAlignment="Left" Margin="167,22,0,0" VerticalAlignment="Top" Width="219" SelectedDate="{Binding OrderDate, Mode=TwoWay}"/>
     </Grid>
 
 </Window>

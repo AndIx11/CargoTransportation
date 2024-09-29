@@ -13,12 +13,13 @@
         <DataGrid x:Name="MainTable" Margin="50,85,50,50" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" MaxHeight="385">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="#" Binding="{Binding Id}" Width="45"/>
-                <DataGridTextColumn Header="Марка" Binding="{Binding Brand.BrandName}" Width="200"/>
-                <DataGridTextColumn Header="Модель" Binding="{Binding CarModel.ModelName}" Width="200"/>
+                <DataGridTextColumn Header="Марка" Binding="{Binding Brand.BrandName}" Width="180"/>
+                <DataGridTextColumn Header="Модель" Binding="{Binding CarModel.ModelName}" Width="180"/>
                 <DataGridTextColumn Header="Год выпуска" Binding="{Binding YearOfManufacture}" Width="*"/>
                 <DataGridTextColumn Header="Год кап. рем." Binding="{Binding YearOfOverhaul}" Width="*"/>
                 <DataGridTextColumn Header="Гос. номер" Binding="{Binding LicencePlate}" Width="*"/>
                 <DataGridTextColumn Header="Пробег" Binding="{Binding Mileage}" Width="*"/>
+                <DataGridTextColumn Header="Груз-ность" Binding="{Binding PayloadCapacity}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
 

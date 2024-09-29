@@ -131,14 +131,32 @@ namespace OrdersMenu
 
         public void CreateData(object obj)
         {
+            if (SelectedCargo == null)
+                throw new Exception("Выбранный груз не может быть пустым!");
+
+            if (SelectedUnit == null)
+                throw new Exception("Выбранная ед. измерения не может быть пустой!");
+
+            if (Quantity == "" || Quantity == null)
+                throw new Exception("Количество не может быть пустым!");
             if (!int.TryParse(Quantity, out int quantity))
-                throw new Exception("Некорректный формат");
+                throw new Exception("Количество не может содержать буквы!");
+            if (quantity <= 0)
+                throw new Exception("Количество не может быть меньше нуля и равным ему!");
 
+            if (TotalWeight == "" || TotalWeight == null)
+                throw new Exception("Общий вес не может быть пустым!");
             if (!double.TryParse(TotalWeight, out double totalWeight))
-                throw new Exception("Некорректный формат");
+                throw new Exception("Общий вес не может содержать буквы!");
+            if (totalWeight <= 0)
+                throw new Exception("Общий вес не может быть меньше нуля и равным ему!");
 
+            if (InsuranceValue == "" || InsuranceValue == null)
+                throw new Exception("Страховая стоимость не может быть пустой!");
             if (!double.TryParse(InsuranceValue, out double insuranceValue))
-                throw new Exception("Некорректный формат");
+                throw new Exception("Страховая стоимость не может содержать буквы!");
+            if (insuranceValue < 0)
+                throw new Exception("Страховая стоимость не может быть меньше нуля!");
 
             CargoOrder = new CargoOrders()
             {

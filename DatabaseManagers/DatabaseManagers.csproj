@@ -160,6 +160,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataVerification.cs" />
     <Compile Include="Encryption.cs" />
     <Compile Include="Models\BankModel.cs" />
     <Compile Include="Models\BrandModel.cs" />

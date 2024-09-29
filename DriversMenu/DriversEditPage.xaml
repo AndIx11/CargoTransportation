@@ -14,8 +14,9 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="#" Binding="{Binding Id}" Width="45"/>
                 <DataGridTextColumn Header="ФИО" Binding="{Binding FullName}" Width="250"/>
+				<DataGridTextColumn Header="Категории" Binding="{Binding CategoriesNames}" Width="100"/>
                 <DataGridTextColumn Header="Класс" Binding="{Binding Classification.Name}" Width="*"/>
-                <DataGridTextColumn Header="Табельный номер" Binding="{Binding BadgeNumber}" Width="*"/>
+                <DataGridTextColumn Header="Табельный номер" Binding="{Binding BadgeNumber}" Width="120"/>
                 <DataGridTextColumn Header="Год рождения" Binding="{Binding BirthYear}" Width="*"/>
                 <DataGridTextColumn Header="Стаж" Binding="{Binding WorkExperience}" Width="*"/>
             </DataGrid.Columns>

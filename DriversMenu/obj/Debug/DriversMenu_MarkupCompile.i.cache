@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\andre\Desktop\Грузоперевозки\DriversMenu\obj\Debug\
+C:\Users\Kirill\Desktop\Заказы\CargoTransportation\DriversMenu\obj\Debug\
 DriversMenu
 none
 false
@@ -13,8 +13,8 @@ DEBUG;TRACE
 2-1138522679
 
 8692361312
-41-857632024
+41-622449205
 DriversEditPage.xaml;DriversEditWindow.xaml;
 
-False
+True
 

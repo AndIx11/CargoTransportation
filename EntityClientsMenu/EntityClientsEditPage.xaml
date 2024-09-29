@@ -13,8 +13,9 @@
         <DataGrid x:Name="MainTable" Margin="50,85,50,50" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" MaxHeight="385">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="#" Binding="{Binding Id}" Width="45"/>
-                <DataGridTextColumn Header="Наименование" Binding="{Binding Name}" Width="200"/>
-                <DataGridTextColumn Header="ИНН" Binding="{Binding INN}" Width="150"/>
+                <DataGridTextColumn Header="Наименование" Binding="{Binding Name}" Width="180"/>
+                <DataGridTextColumn Header="ИНН" Binding="{Binding INN}" Width="120"/>
+				<DataGridTextColumn Header="Банк" Binding="{Binding Bank.BankName}" Width="100"/>
 				<DataGridTextColumn Header="Телефон" Binding="{Binding Client.Phone}" Width="*"/>
                 <DataGridTextColumn Header="Имя руководителя" Binding="{Binding CEOName}" Width="*"/>
                 <DataGridTextColumn Header="Юр. адрес" Binding="{Binding LegalAddress}" Width="*"/>

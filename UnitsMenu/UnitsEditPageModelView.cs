@@ -54,7 +54,7 @@ namespace UnitsMenu
             }
             catch (Exception ex)
             {
-                ErrorMessage("Невозможно удалить элемент, так как он связан с другими элементами в базе данных.");
+                 ErrorMessage(ex.Message);
             }
         }
 

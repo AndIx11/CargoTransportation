@@ -46,7 +46,6 @@ namespace DatabaseManagers
         private DbSet<DriverModel> Drivers { get; set; }
         private DbSet<EntityClientModel> EntityClients { get; set; }
         private DbSet<IndividualModel> Individuals { get; set; }
-        //public DbSet<VehiclesMModel> ModelModels { get; set; }
         private DbSet<UnitModel> Units { get; set; }
         private DbSet<VehicleDestinations> VehicleDestinations { get; set; }
         private DbSet<VehicleModel> Vehicles { get; set; }
@@ -150,7 +149,8 @@ namespace DatabaseManagers
                 .WithMany()
                 .HasForeignKey(m => m.ClassID);
 
-            modelBuilder.Entity<VehicleModel>().HasKey(e => e.Id);
+
+			modelBuilder.Entity<VehicleModel>().HasKey(e => e.Id);
             modelBuilder.Entity<VehicleModel>()
                 .HasOne(m => m.CarModel)
                 .WithMany()
@@ -170,7 +170,7 @@ namespace DatabaseManagers
                 .WithMany()
                 .HasForeignKey(m => m.DriverID);
 
-            modelBuilder.Entity<OrderModel>().HasKey(e => e.Id);
+			modelBuilder.Entity<OrderModel>().HasKey(e => e.Id);
             modelBuilder.Entity<OrderModel>()
                 .HasOne(m => m.SenderClient)
                 .WithMany()
@@ -378,7 +378,10 @@ namespace DatabaseManagers
             if (bankModel == null || string.IsNullOrEmpty(bankModel.BankName))
                 throw new Exception("Название банка не может быть пустым");
 
-            if(Banks.Any(b => b.BankName == bankModel.BankName))
+			if (!DataVerification.IsValidString(bankModel.BankName))
+				throw new Exception("Название банка - некорректный формат");
+
+			if (Banks.Any(b => b.BankName == bankModel.BankName))
                 throw new Exception("Банк с таким названием уже существует");
 
             Banks.Add(bankModel);
@@ -390,7 +393,10 @@ namespace DatabaseManagers
             if (bankModel == null || string.IsNullOrEmpty(bankModel.BankName))
                 throw new Exception("Название банка не может быть пустым");
 
-            if (Banks.Any(b => b.BankName == bankModel.BankName && b.Id != bankModel.Id))
+			if (!DataVerification.IsValidString(bankModel.BankName))
+				throw new Exception("Название банка - некорректный формат");
+
+			if (Banks.Any(b => b.BankName == bankModel.BankName && b.Id != bankModel.Id))
                 throw new Exception("Банк с таким названием уже существует");
 
             var bank = Banks.ToList().Find(b => b.Id == bankModel.Id);
@@ -404,6 +410,9 @@ namespace DatabaseManagers
             var bank = Banks.Find(bankModel.Id);
             if (bank == null)
                 throw new InvalidOperationException("Банк не найден.");
+
+            if (EntityClientsList.Any(c => c.BankID == bankModel.Id))
+                throw new Exception("Данный банк используется клиентом");
 
             Banks.Remove(bank);
             SaveChanges();
@@ -420,7 +429,10 @@ namespace DatabaseManagers
             if (unitModel == null || string.IsNullOrEmpty(unitModel.UnitName))
                 throw new Exception("Название единицы измерения не может быть пустым");
 
-            if (Units.Any(u => u.UnitName == unitModel.UnitName))
+			if (!DataVerification.IsValidString(unitModel.UnitName))
+				throw new Exception("Название единицы измерения - некорректный формат");
+
+			if (Units.Any(u => u.UnitName == unitModel.UnitName))
                 throw new Exception("Единица измерения с таким названием уже существует");
 
             Units.Add(unitModel);
@@ -432,7 +444,10 @@ namespace DatabaseManagers
             if (unitModel == null || string.IsNullOrEmpty(unitModel.UnitName))
                 throw new Exception("Название единицы измерения не может быть пустым");
 
-            if (Units.Any(u => u.UnitName == unitModel.UnitName && u.Id != unitModel.Id))
+			if (!DataVerification.IsValidString(unitModel.UnitName))
+				throw new Exception("Название единицы измерения - некорректный формат");
+
+			if (Units.Any(u => u.UnitName == unitModel.UnitName && u.Id != unitModel.Id))
                 throw new Exception("Единица измерения с таким названием уже существует");
 
             var unit = Units.Find(unitModel.Id);
@@ -452,6 +467,9 @@ namespace DatabaseManagers
             var unit = Units.Find(id);
             if (unit == null)
                 throw new InvalidOperationException("Единица измерения не найдена.");
+
+            if (CargoOrdersList.Any(co => co.UnitID == id))
+                throw new Exception("Данная единица измерения используется в заказе");
 
             Units.Remove(unit);
             SaveChanges();
@@ -495,6 +513,9 @@ namespace DatabaseManagers
             if (destination == null)
                 throw new InvalidOperationException("Тип груза не найден.");
 
+            if (VehicleDestinations.ToList().Any(vd => vd.DestinationID == id))
+                throw new Exception("Данное назначение используется водителем");
+
             Destinations.Remove(destination);
             SaveChanges();
         }
@@ -536,6 +557,9 @@ namespace DatabaseManagers
             if (client == null)
                 throw new InvalidOperationException("Клиент не найден.");
 
+            if (OrdersList.Any(o => o.SenderClientID == client.Id || o.ReceiverClientID == client.Id))
+                throw new Exception("Данные клиента определены в действующем заказе");
+
             Clients.Remove(client);
             SaveChanges();
         }
@@ -551,7 +575,10 @@ namespace DatabaseManagers
             if (classificationModel == null || string.IsNullOrEmpty(classificationModel.Name))
                 throw new Exception("Название классификации не может быть пустым");
 
-            if (Classifications.Any(c => c.Name == classificationModel.Name))
+			if (!DataVerification.IsValidString(classificationModel.Name))
+				throw new Exception("Название классификации - некорректный формат");
+
+			if (Classifications.Any(c => c.Name == classificationModel.Name))
                 throw new Exception("Классность с таким названием уже существует");
 
             Classifications.Add(classificationModel);
@@ -563,7 +590,10 @@ namespace DatabaseManagers
             if (classificationModel == null || string.IsNullOrEmpty(classificationModel.Name))
                 throw new Exception("Название классификации не может быть пустым");
 
-            if (Classifications.Any(c => c.Name == classificationModel.Name && c.Id != classificationModel.Id))
+			if (!DataVerification.IsValidString(classificationModel.Name))
+				throw new Exception("Название классификации - некорректный формат");
+
+			if (Classifications.Any(c => c.Name == classificationModel.Name && c.Id != classificationModel.Id))
                 throw new Exception("Классность с таким названием уже существует");
 
             var classification = Classifications.Find(classificationModel.Id);
@@ -581,6 +611,9 @@ namespace DatabaseManagers
             if (classification == null)
                 throw new InvalidOperationException("Классификация не найдена.");
 
+            if (DriversList.Any(d => d.Classification.Id == id))
+                throw new Exception("Данный класс используется водителем");
+
             Classifications.Remove(classification);
             SaveChanges();
         }
@@ -596,7 +629,10 @@ namespace DatabaseManagers
             if (categoryModel == null || string.IsNullOrEmpty(categoryModel.Name))
                 throw new Exception("Название категории не может быть пустым");
 
-            if (Categories.Any(c => c.Name == categoryModel.Name))
+			if (!DataVerification.IsValidString(categoryModel.Name))
+				throw new Exception("Название категории - некорректный формат");
+
+			if (Categories.Any(c => c.Name == categoryModel.Name))
                 throw new Exception("Категория с таким названием уже существует");
 
             Categories.Add(categoryModel);
@@ -608,7 +644,10 @@ namespace DatabaseManagers
             if (categoryModel == null || string.IsNullOrEmpty(categoryModel.Name))
                 throw new Exception("Название категории не может быть пустым");
 
-            if (Classifications.Any(c => c.Name == categoryModel.Name && c.Id != categoryModel.Id))
+			if (!DataVerification.IsValidString(categoryModel.Name))
+				throw new Exception("Название категории - некорректный формат");
+
+			if (Classifications.Any(c => c.Name == categoryModel.Name && c.Id != categoryModel.Id))
                 throw new Exception("Категория с таким названием уже существует");
 
             var category = Categories.Find(categoryModel.Id);
@@ -627,6 +666,9 @@ namespace DatabaseManagers
             if (category == null)
                 throw new InvalidOperationException("Категория не найдена.");
 
+            if (DriverCategoriesList().Any(dc => dc.CategoryID == id))
+                throw new Exception("Данная категория используется водителем");
+
             Categories.Remove(category);
             SaveChanges();
         }
@@ -642,7 +684,10 @@ namespace DatabaseManagers
             if (cargoModel == null || string.IsNullOrEmpty(cargoModel.CargoName))
                 throw new Exception("Название груза не может быть пустым");
 
-            Cargos.Add(cargoModel);
+			if (!DataVerification.IsValidString(cargoModel.CargoName))
+				throw new Exception("Название груза - некорректный формат");
+
+			Cargos.Add(cargoModel);
             SaveChanges();
         }
 
@@ -651,7 +696,10 @@ namespace DatabaseManagers
             if (cargoModel == null || string.IsNullOrEmpty(cargoModel.CargoName))
                 throw new Exception("Название груза не может быть пустым");
 
-            var cargo = Cargos.Find(cargoModel.Id);
+			if (!DataVerification.IsValidString(cargoModel.CargoName))
+				throw new Exception("Название груза - некорректный формат");
+
+			var cargo = Cargos.Find(cargoModel.Id);
             if (cargo == null)
                 throw new InvalidOperationException("Груз не найден.");
 
@@ -664,6 +712,9 @@ namespace DatabaseManagers
             var cargo = Cargos.Find(cargoModel.Id);
             if (cargo == null)
                 throw new InvalidOperationException("Груз не найден.");
+
+            if (CargoOrders.Any(co => co.CargoID == cargoModel.Id))
+                throw new Exception("Данный груз занесен в действующий заказ");
 
             Cargos.Remove(cargo);
             SaveChanges();
@@ -680,7 +731,10 @@ namespace DatabaseManagers
             if (brandModel == null || string.IsNullOrEmpty(brandModel.BrandName))
                 throw new Exception("Название марки не может быть пустым");
 
-            if (Brands.Any(b => b.BrandName == brandModel.BrandName))
+			if (!DataVerification.IsValidString(brandModel.BrandName))
+				throw new Exception("Название марки - некорректный формат");
+
+			if (Brands.Any(b => b.BrandName == brandModel.BrandName))
                 throw new Exception("Марка с таким названием уже существует");
 
             Brands.Add(brandModel);
@@ -692,7 +746,10 @@ namespace DatabaseManagers
             if (brandModel == null || string.IsNullOrEmpty(brandModel.BrandName))
                 throw new Exception("Название марки не может быть пустым");
 
-            if (Brands.Any(b => b.BrandName == brandModel.BrandName && b.Id != brandModel.Id))
+			if (!DataVerification.IsValidString(brandModel.BrandName))
+				throw new Exception("Название марки - некорректный формат");
+
+			if (Brands.Any(b => b.BrandName == brandModel.BrandName && b.Id != brandModel.Id))
                 throw new Exception("Марка с таким названием уже существует");
 
             var brand = Brands.Find(brandModel.Id);
@@ -710,6 +767,9 @@ namespace DatabaseManagers
             if (brand == null)
                 throw new Exception("Марка не найдена.");
 
+            if (VehiclesList.Any(v => v.BrandID == id))
+                throw new Exception("В базе определен автомобиль данной марки");
+
             Brands.Remove(brand);
             SaveChanges();
         }
@@ -725,7 +785,10 @@ namespace DatabaseManagers
             if (carModel == null || string.IsNullOrEmpty(carModel.ModelName))
                 throw new Exception("Название модели не может быть пустым");
 
-            if (CarModels.Any(c => c.ModelName == carModel.ModelName))
+            if(!DataVerification.IsValidString(carModel.ModelName))
+				throw new Exception("Название модели - некорректный формат");
+
+			if (CarModels.Any(c => c.ModelName == carModel.ModelName))
                 throw new Exception("Модель с таким названием уже существует");
             CarModels.Add(carModel);
             SaveChanges();
@@ -736,7 +799,10 @@ namespace DatabaseManagers
             if (carModel == null || string.IsNullOrEmpty(carModel.ModelName))
                 throw new Exception("Название модели не может быть пустым");
 
-            if (CarModels.Any(c => c.ModelName == carModel.ModelName && c.Id != carModel.Id))
+			if (!DataVerification.IsValidString(carModel.ModelName))
+				throw new Exception("Название модели - некорректный формат");
+
+			if (CarModels.Any(c => c.ModelName == carModel.ModelName && c.Id != carModel.Id))
                 throw new Exception("Модель с таким названием уже существует");
 
             var edit = CarModels.Find(carModel.Id);
@@ -756,7 +822,10 @@ namespace DatabaseManagers
             if (data == null)
                 throw new Exception("Модель не найдена");
 
-            CarModels.Remove(carModel);
+            if(VehiclesList.Any(v => v.ModelID == carModel.Id))
+				throw new Exception("В базе определен автомобиль данной модели");
+
+			CarModels.Remove(carModel);
             SaveChanges();
         }
 
@@ -773,6 +842,9 @@ namespace DatabaseManagers
             if (individualModel.FullName.Split(' ').Length != 3 
                 && individualModel.FullName.Split(' ').Length != 2)
                 throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)!");
+
+            if (!DataVerification.IsValidString(clientModel.Name))
+                throw new Exception("ФИО - некорректный формат");
 
             if (!Regex.IsMatch(individualModel.PassportNumber, @"^\d{4} \d{6}$"))
                 throw new Exception("Формат записи паспротных данных: \"0000 000000\".");
@@ -795,7 +867,10 @@ namespace DatabaseManagers
                 && individualModel.FullName.Split(' ').Length != 2)
                 throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)!");
 
-            if (!Regex.IsMatch(individualModel.PassportNumber, @"^\d{4} \d{6}$"))
+			if (!DataVerification.IsValidString(individualModel.FullName))
+				throw new Exception("ФИО - некорректный формат");
+
+			if (!Regex.IsMatch(individualModel.PassportNumber, @"^\d{4} \d{6}$"))
                 throw new Exception("Формат записи паспротных данных: \"0000 000000\".");
 
             if (!Regex.IsMatch(individualModel.IssuedBy, @"^[^\d]+$"))
@@ -817,7 +892,8 @@ namespace DatabaseManagers
             if (data == null)
                 throw new Exception("Клиент не найден");
 
-            Individuals.Remove(individualModel);
+			Delete(individualModel.Client);
+			Individuals.Remove(individualModel);
             SaveChanges();
         }
 
@@ -833,7 +909,10 @@ namespace DatabaseManagers
                 && entityClient.CEOName.Split(' ').Length != 2)
                 throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)!");
 
-            if (!Regex.IsMatch(entityClient.INN, @"^\d{12}$"))
+			if (!DataVerification.IsValidString(clientModel.Name))
+				throw new Exception("Наименование - некорректный формат");
+
+			if (!Regex.IsMatch(entityClient.INN, @"^\d{12}$"))
                 throw new Exception("ИНН состоит из 12-ти подряд идущих цифр!");
 
             Clients.Add(clientModel);
@@ -851,7 +930,10 @@ namespace DatabaseManagers
                 && entityClient.CEOName.Split(' ').Length != 2)
                 throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
 
-            if (!Regex.IsMatch(entityClient.INN, @"^\d{12}$"))
+			if (!DataVerification.IsValidString(entityClient.Name))
+				throw new Exception("Наименование - некорректный формат");
+
+			if (!Regex.IsMatch(entityClient.INN, @"^\d{12}$"))
                 throw new Exception("ИНН состоит из 12-ти подряд идущих цифр!");
 
             var edit = EntityClients.Find(entityClient.Id);
@@ -870,7 +952,8 @@ namespace DatabaseManagers
             if (data == null)
                 throw new Exception("Клиент не найден");
 
-            EntityClients.Remove(entityClient);
+			Delete(entityClient.Client);
+			EntityClients.Remove(entityClient);
             SaveChanges();
         }
 
@@ -888,7 +971,10 @@ namespace DatabaseManagers
                 && driver.FullName.Split(' ').Length != 2)
                 throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
 
-            Drivers.Add(driver);
+			if (!DataVerification.IsValidString(driver.FullName))
+				throw new Exception("ФИО - некорректный формат");
+
+			Drivers.Add(driver);
             SaveChanges();
         }
 
@@ -898,13 +984,19 @@ namespace DatabaseManagers
                 && driver.FullName.Split(' ').Length != 2)
                 throw new Exception("Формат записи ФИО: Фамилия Имя Отчество или Фамилия Имя (при отсутствии отчества)");
 
-            var edit = Drivers.Find(driver.Id);
+			if (!DataVerification.IsValidString(driver.FullName))
+				throw new Exception("ФИО - некорректный формат");
+
+			var edit = Drivers.Find(driver.Id);
             Entry(edit).CurrentValues.SetValues(driver);
             SaveChanges();
         }
 
         public void Delete(DriverModel driver)
         {
+            if (DriverCrewsList().Any(dc => dc.DriverID == driver.Id))
+                throw new Exception("Данный водитель задействован в экипаже");
+            
             var delete = Drivers.Find(driver.Id);
             Drivers.Remove(delete);
             SaveChanges();
@@ -970,7 +1062,12 @@ namespace DatabaseManagers
 
         public void Delete(CrewModel crewModel)
         {
-            var delete = Crews.Find(crewModel.Id);
+            var trips = TripsList.Where(t => t.CrewID == crewModel.Id).ToArray();
+
+			if (trips.Length > 0)
+				throw new Exception("Экипаж выполняет заказ");
+
+			var delete = Crews.Find(crewModel.Id);
             Crews.Remove(delete);
             SaveChanges();
         }
@@ -1032,20 +1129,31 @@ namespace DatabaseManagers
 
 		public void Add(VehicleModel vehicleModel)
         {
+			//if (!DataVerification.IsValidString(vehicleModel.Name))
+			//	throw new Exception("Наименование - некорректный формат");	
+
             Vehicles.Add(vehicleModel);
             SaveChanges();
         }
 
         public void Edit(VehicleModel vehicleModel)
         {
-            var edit = Vehicles.Find(vehicleModel.Id);
+			//if (!DataVerification.IsValidString(vehicleModel.Name))
+			//	throw new Exception("Наименование - некорректный формат");
+
+			var edit = Vehicles.Find(vehicleModel.Id);
             Entry(edit).CurrentValues.SetValues(vehicleModel);
             SaveChanges();
         }
 
         public void Delete(VehicleModel vehicleModel)
         {
-            var delete = Vehicles.Find(vehicleModel.Id);
+			var trips = TripsList.Where(t => t.VehicleID == vehicleModel.Id).ToArray();
+
+            if (trips.Length > 0)
+                throw new Exception("Транспорт задействован в рейсе");
+
+			var delete = Vehicles.Find(vehicleModel.Id);
             Vehicles.Remove(delete);
             SaveChanges();
         }
@@ -1071,7 +1179,7 @@ namespace DatabaseManagers
 
         public void Delete(TripModel tripModel)
         {
-			Trips.Remove(tripModel);
+            Trips.Remove(tripModel);
 			SaveChanges();
         }
 
@@ -1096,6 +1204,11 @@ namespace DatabaseManagers
 
         public void Delete(OrderModel orderModel)
         {
+            var trips = TripsList.Where(t => t.OrderID == orderModel.Id).ToArray();
+
+            for (int i = 0; i < trips.Length; i++)
+                Delete(trips[i]);
+
             Orders.Remove(orderModel);
             SaveChanges();
         }

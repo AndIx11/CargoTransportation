@@ -13,8 +13,20 @@
 
         public virtual BrandModel Brand { get; set; }
         public virtual CarModelModel CarModel { get; set; }
+        public string Name
+        {
+            get
+            {
+                if (Brand == null || CarModel == null || YearOfManufacture == null)
+                {
+                    return "Информация неполная!";
+                }
+                return $"{Brand.BrandName} {CarModel.ModelName} {YearOfManufacture}";
+            }
+        }
 
-        public string Name => $"{Brand.BrandName} {CarModel.ModelName} {YearOfManufacture}";
+
+        //public string Name => $"{Brand.BrandName} {CarModel.ModelName} {YearOfManufacture}";
 
         /// <summary>
         /// соединение с TripModel (VehicleID с ID)

@@ -50,7 +50,7 @@ namespace CategoriesMenu
             {
                 base.Add(obj);
 
-                if (Name == "")
+                if (Name == "" || Name == null)
                     throw new Exception("Название не может быть пустым");
 
                 CategoryModel categoryModel = new CategoryModel()
@@ -75,7 +75,7 @@ namespace CategoriesMenu
             {
                 base.Edit(obj);
 
-                if (Name == "")
+                if (Name == "" || Name == null)
                     throw new Exception("Название не может быть пустым");
 
                 CategoryModel categoryModel = new CategoryModel()

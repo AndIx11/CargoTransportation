@@ -54,7 +54,7 @@ namespace CategoriesMenu
             }
             catch (Exception ex)
             {
-                ErrorMessage("Невозможно удалить элемент, так как он связан с другими элементами в базе данных.");
+                ErrorMessage("Элемент для удаления не выбран");
             }
         }
 

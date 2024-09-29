@@ -1,4 +1,7 @@
-﻿namespace DatabaseManagers
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace DatabaseManagers
 {
     public class DriverModel : DataModel
     {
@@ -10,10 +13,18 @@
 
         public virtual ClassificationModel Classification { get; set; }
 
-        /// <summary>
-        /// соединение с ClassificationsModel (ID с ID)
-        /// соединение с DriverCategories (ID с DriverID)
-        /// соединение с DriverCrews (ID с DriverID)
-        /// </summary>
-    }
+		public string GetCategoriesNames()
+		{
+			var categoriesList = DatabaseManager.GetInstance().DriverCategoriesList();
+			var driversCategories = categoriesList.Where(c => c.DriverID == Id).ToList();
+
+			var categoriesNames = driversCategories.Select(dc => dc.Category.Name);
+
+			string crewName = string.Join(", ", categoriesNames);
+			return crewName;
+		}
+
+		public string CategoriesNames => GetCategoriesNames();
+
+	}
 }

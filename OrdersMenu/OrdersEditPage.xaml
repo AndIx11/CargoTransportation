@@ -10,12 +10,16 @@
 
     <Grid Background="White">
         <Button x:Name="LogOutButton" Content="Выйти" HorizontalAlignment="Right" Margin="0,32,50,0" VerticalAlignment="Top" Width="114" Height="36" Command="{Binding LogOutCommand}"/>
-        <DataGrid x:Name="MainTable" Margin="50,85,50,50" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" MaxHeight="385">
+		<DataGrid x:Name="MainTable" Margin="50,85,50,50" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" MaxHeight="385">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="#" Binding="{Binding Id}" Width="45"/>
-				<DataGridTextColumn Header="Отправитель" Binding="{Binding SenderClient.Name}" Width="200"/>
-				<DataGridTextColumn Header="Получатель" Binding="{Binding ReceiverClient.Name}" Width="200"/>
-				<DataGridTextColumn Header="Дата получения" Binding="{Binding OrderDate}" Width="*"/>
+                <DataGridTextColumn Header="#" Binding="{Binding Id}" Width="30"/>
+				<DataGridTextColumn Header="Отправитель" Binding="{Binding SenderClient.Name}" Width="150"/>
+				<DataGridTextColumn Header="Получатель" Binding="{Binding ReceiverClient.Name}" Width="150"/>
+                <DataGridTextColumn Header="Адрес погрузки" Binding="{Binding LoadingAddress}" Width="*"/>
+                <DataGridTextColumn Header="Адрес разгрузки" Binding="{Binding UnloadingAddress}" Width="*"/>
+                <DataGridTextColumn Header="Дата заявки" Binding="{Binding OrderDate}" Width="*"/>
+				<DataGridTextColumn Header="Длина маршрута" Binding="{Binding RouteLength}" Width="*"/>
+				<DataGridTextColumn Header="Страховая стоимость" Binding="{Binding OrderCost}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
 
