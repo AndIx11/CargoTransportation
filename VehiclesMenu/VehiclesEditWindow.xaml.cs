@@ -26,5 +26,10 @@ namespace VehiclesMenu
             InitializeComponent();
             Image = Photo;
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
